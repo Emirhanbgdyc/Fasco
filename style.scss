@@ -81,5 +81,31 @@ body {
     .hero-bottom-img {
       width: 100%;
     }
+    .hero__h1{
+      font-size: clamp(20px,5vw,70px);
+      font-weight: 900;
+      color: $home-color;
+      line-height: 91px;
+      font-family:Montserrat ,'Sans-Serif';
+    }
+    .hero__h2{
+    
+      font-size: clamp(20px,5vw,70px);
+      line-height:Helvetica Neue,'Sans-Serif';
+    }
+    .hero__h3{
+      font-size: clamp(16px,1vw,20px);
+      color: $home-color;
+    }
+    .hero__btn{
+      width: 207px;
+      height: 56px;
+      background-color: $black-color;
+      color: $white-color;
+      border-radius: 10px;
+    }
+    .hero-bottom-img{
+      margin-top: 110px;
+    }
   }
 }
