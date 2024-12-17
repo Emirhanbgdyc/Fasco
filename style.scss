@@ -41,16 +41,21 @@ body {
         display: flex;
         gap: 30px;
         li {
-          a {
-            color: #484848;
+          .nav-item {
+            color: $home-color;
             font-weight: 400;
             font-size: 16px;
           }
+        
+          .nav-item.active{
+            color:$black-color;
+          }
+
           .sign-up {
             padding: 20px 50px;
-            background-color: #000000;
+            background-color: $black-color ;
             text-decoration: none;
-            color: #fff;
+            color:$white-color;
             margin-left: 30px;
           }
         }
