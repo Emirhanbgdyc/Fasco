@@ -1,5 +1,6 @@
 @import "./shadow/index";
 
+
 * {
   margin: 0;
   padding: 0;
@@ -42,7 +43,7 @@ body {
         gap: 30px;
         li {
           .nav-item {
-            color: $home-color;
+            color: $grey-black-color;
             font-weight: 400;
             font-size: 16px;
           }
@@ -89,7 +90,7 @@ body {
     .hero__h1{
       font-size: clamp(20px,5vw,70px);
       font-weight: 900;
-      color: $home-color;
+      color: $grey-black-color;
       line-height: 91px;
       font-family:Montserrat ,'Sans-Serif';
     }
@@ -100,7 +101,7 @@ body {
     }
     .hero__h3{
       font-size: clamp(16px,1vw,20px);
-      color: $home-color;
+      color:$grey-black-color;
     }
     .hero__btn{
       width: 207px;
@@ -108,9 +109,57 @@ body {
       background-color: $black-color;
       color: $white-color;
       border-radius: 10px;
+      transition: transform 0.3s ease-in-out;
     }
     .hero-bottom-img{
       margin-top: 110px;
     }
+  }
+}
+
+.home-carousel{
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-block: 60px;
+  gap: 20px;
+  box-sizing: border-box;
+  .owl-carousel{
+    
+    .item{
+      text-align: center;
+      
+      img{
+        max-width: 80%; 
+        height: auto;
+        transition: transform 0.5s ease-in-out;
+      }
+    }
+  }
+}
+
+.deals__wrapper{
+  padding-block: 80px;
+  background: linear-gradient(180deg, #FFFFFF 0%, #FAFAFA 100%);
+  // padding: 20px;
+  .container{
+    max-width: 1281px;
+    margin: 0 auto; 
+  }
+
+  .deals__h2{
+    font-family: "Volkhov";
+    font-size: clamp(20px ,4vw,46px);
+    font-weight: 400;
+    line-height: 60px;
+    color: $grey-black-color;
+  }
+  
+  .deals__p{
+    max-width: 436px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: $grey-color;
+    margin-top: 20px;
   }
 }

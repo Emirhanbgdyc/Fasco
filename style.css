@@ -97,7 +97,48 @@ body {
   background-color: #000000;
   color: #FFFFFF;
   border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
 }
 .hero-section .hero-section-top .hero-bottom-img {
   margin-top: 110px;
+}
+
+.home-carousel {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-block: 60px;
+  gap: 20px;
+  box-sizing: border-box;
+}
+.home-carousel .owl-carousel .item {
+  text-align: center;
+}
+.home-carousel .owl-carousel .item img {
+  max-width: 80%;
+  height: auto;
+  transition: transform 0.5s ease-in-out;
+}
+
+.deals__wrapper {
+  padding-block: 80px;
+  background: linear-gradient(180deg, #FFFFFF 0%, #FAFAFA 100%);
+}
+.deals__wrapper .container {
+  max-width: 1281px;
+  margin: 0 auto;
+}
+.deals__wrapper .deals__h2 {
+  font-family: "Volkhov";
+  font-size: clamp(20px, 4vw, 46px);
+  font-weight: 400;
+  line-height: 60px;
+  color: #484848;
+}
+.deals__wrapper .deals__p {
+  max-width: 436px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #8A8A8A;
+  margin-top: 20px;
 }/*# sourceMappingURL=style.css.map */

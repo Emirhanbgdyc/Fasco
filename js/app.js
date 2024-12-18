@@ -1,19 +1,29 @@
 const homeButton =document.querySelector('.hero__btn');
+const carouselHome = document.querySelectorAll(".item");
+
+
 
 //!Buttona ozellik ekleme bolumu
 
 const runEvents = () =>{
     homeButton.addEventListener('mouseover',overEvents);
     homeButton.addEventListener('mouseout',outEvents);
-}
+    
+    //? Carousel Events
 
-
-const overEvents = () =>{
-    homeButton.style.transform = 'scale(1.1)';
+    carouselHome.forEach((item)=>{
+        item.addEventListener('mouseover',overEvents)
+        item.addEventListener('mouseout',outEvents)
+    })
 };
 
-const outEvents =() =>{
-    homeButton.style.transform = 'scale(1)';
+
+const overEvents = (event) =>{
+    event.target.style.transform = 'scale(1.1)'; 
+};
+
+const outEvents =(event) =>{
+    event.target.style.transform = 'scale(1)';
 }
 
 runEvents();
@@ -21,9 +31,13 @@ runEvents();
 //! Resimleri javascript yolu ile ekleme kismi
 
 const leftSecImg = document.querySelector('.hero-section-left');
+const rightSecImg = document.querySelector('.hero-section-right');
+
+
 
 const secImgBox = {
     imgLeft : "./images/left.png",
+    imgRight : "./images/right.png",
 
 };
 
@@ -31,10 +45,33 @@ const render ={
     imgLeft : () =>{
         leftSecImg.innerHTML = `<img src="${secImgBox.imgLeft}" alt="Left Image">`;
     },
+    imgRight :()=>{
+        rightSecImg.innerHTML = `<img src="${secImgBox.imgRight}" alt="">`
+    },
 };
 
 const heroRender =()=>{
     render.imgLeft();
+    render.imgRight();
 }
 
 heroRender();
+
+//! OWL CAREOUSEL
+
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
