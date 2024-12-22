@@ -111,9 +111,8 @@ Bu proje [MIT Lisansı](./LICENSE) altında lisanslanmıştır. Daha fazla bilgi
 
 ## İletişim
 
-- Proje Bağlantısı:[https://github.com/Emirhanbgdyc/Markaj_Gazetesi] 
+- Proje Bağlantısı:[https://github.com/Emirhanbgdyc/Fasco] 
 
-- İstinye Üniversitesi: [https://www.istinye.edu.tr/](https://www.istinye.edu.tr/)
 
 
 
