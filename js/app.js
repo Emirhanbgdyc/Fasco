@@ -1,5 +1,7 @@
-const homeButton =document.querySelector('.hero__btn');
-const carouselHome = document.querySelectorAll(".item");
+(function(){
+
+    const homeButton =document.querySelector('.hero__btn');
+    const carouselHome = document.querySelectorAll(".item");
 
 
 
@@ -26,7 +28,7 @@ const outEvents =(event) =>{
     event.target.style.transform = 'scale(1)';
 }
 
-runEvents();
+
 
 //! Resimleri javascript yolu ile ekleme kismi
 
@@ -55,23 +57,34 @@ const heroRender =()=>{
     render.imgRight();
 }
 
-heroRender();
 
 //! OWL CAREOUSEL
 
-$('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:5
+const initializeCareousel =()=>{
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        responsive:{
+            0:{items:1},
+            600:{items:3},
+            1000:{items:5}
         }
-    }
-})
+    });
+}; 
+
+//? Tum Fonksiyonlarin toplandigi kisimm...
+
+const initialize = ()=>{
+    runEvents();
+    heroRender();
+    initializeCareousel();
+}
+
+initialize();
+
+
+
+})();
