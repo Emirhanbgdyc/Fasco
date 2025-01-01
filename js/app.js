@@ -2,7 +2,24 @@
 
     const homeButton =document.querySelector('.hero__btn');
     const carouselHome = document.querySelectorAll(".item");
+    const scrollHeaderWrapper =document.querySelector('.header-wrapper');
 
+
+//?Scroll Degismesi Baslangic
+
+let add = 150;
+
+window.addEventListener('scroll',()=>{
+    // console.log(window.scrollY , scrollHeaderWrapper.offsetHeight);
+
+    if(window.scrollY > scrollHeaderWrapper.offsetHeight + add){
+        scrollHeaderWrapper.classList.add('move');
+    }else{
+        scrollHeaderWrapper.classList.remove('move');
+    }
+})
+
+//?Scroll Degismesi Bitis
 
 
 //!Buttona ozellik ekleme bolumu
