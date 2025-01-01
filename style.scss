@@ -278,6 +278,26 @@ body {
           }
         }
       }
+      .line-btn{
+        display: flex;
+        justify-content: end;
+        gap: 10px;
+        margin-right: 10px;
+        .left-btn{
+          width: 48px;
+          height: 48px;
+          border: none;
+          background-color: $white-color;
+          border-radius: 50%;
+        }
+        .right-btn{
+          width: 48px;
+          height: 48px;
+          border: none;
+          background-color: $white-color;
+          border-radius: 50%;
+        }
+      }
     }
   
     .timer-txt {
@@ -294,7 +314,7 @@ body {
   }
  .products-area {
       display: flex;
-      // justify-content: center;
+
       gap: 20px;
       margin: 20px 0;
   
@@ -311,14 +331,20 @@ body {
           text-align: center;
 
           h2{
-
+            font-weight: 600;
+           
+           
+ 
           }
           h3{
+            font-weight: 400;
+            margin-top: 30px;
+            color: $grey-black-color;
             
           }
         }
       }
-  
+      
   
     }
 

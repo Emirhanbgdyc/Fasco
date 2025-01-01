@@ -229,6 +229,26 @@ body {
   line-height: 32px;
   font-weight: 400;
 }
+.deals__wrapper .container .count-down .line-btn {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+  margin-right: 10px;
+}
+.deals__wrapper .container .count-down .line-btn .left-btn {
+  width: 48px;
+  height: 48px;
+  border: none;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+}
+.deals__wrapper .container .count-down .line-btn .right-btn {
+  width: 48px;
+  height: 48px;
+  border: none;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+}
 .deals__wrapper .container .timer-txt {
   font-size: clamp(14px, 1vw, 24px);
   line-height: 28px;
@@ -257,4 +277,12 @@ body {
   left: 24px;
   bottom: 24px;
   text-align: center;
+}
+.deals__wrapper .products-area .product-one .product-one-discount h2 {
+  font-weight: 600;
+}
+.deals__wrapper .products-area .product-one .product-one-discount h3 {
+  font-weight: 400;
+  margin-top: 30px;
+  color: #484848;
 }/*# sourceMappingURL=style.css.map */
