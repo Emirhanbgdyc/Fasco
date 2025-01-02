@@ -12,6 +12,25 @@ body {
   max-width: 1920px;
   margin: 0 auto;
 }
+
+::-webkit-scrollbar {
+  width: 20px;
+  height: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+  to bottom,
+  #607EAA,
+  #FF06B7);
+
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-track {
+  background: #474747;
+}
+
 .header-wrapper {
   width: 100%;
   background-color: #fff;
