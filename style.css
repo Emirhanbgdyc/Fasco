@@ -12,6 +12,20 @@ body {
   margin: 0 auto;
 }
 
+::-webkit-scrollbar {
+  width: 20px;
+  height: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #607EAA, #FF06B7);
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-track {
+  background: #474747;
+}
+
 .header-wrapper {
   width: 100%;
   background-color: #fff;
@@ -264,6 +278,21 @@ body {
   display: flex;
   gap: 20px;
   margin: 20px 0;
+}
+.deals__wrapper .products-area img {
+  position: relative;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0.5;
+  transform: scale(0.8);
+}
+.deals__wrapper .products-area img.active {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 1;
+}
+.deals__wrapper .products-area img.inactive {
+  opacity: 0.3;
+  transform: scale(1);
 }
 .deals__wrapper .products-area .product-one {
   display: flex;
