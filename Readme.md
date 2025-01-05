@@ -43,28 +43,12 @@ git  clone [git@github.com:Emirhanbgdyc/Fasco.git]
 
 ```bash  
   
-cd [markaj_gazetesi]  
+cd [FASCO]  
   
 ```  
 
 
 
-3. Gerekli paketleri yükleyin:
-
-```bash  
-  
-flutter  pub  get  
-  
-```  
-
-
-
-4. Uygulamayı başlatın:
-
-```bash  
-  
- flutter  run  
-```  
 
 
 
