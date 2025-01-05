@@ -372,10 +372,25 @@ body {
 }
 
 .arrivals__wrapper{
-
+  max-width: 1920px;
+  
+  margin: 0 auto;
   text-align: center;
   padding-top: 100px;
   padding-bottom: 80px;
+
+  .arrivals__container{
+    max-width: 1280px;
+   margin: 0 auto;
+    .arrivals__content{
+   
+      .arrivals__title{
+        font-family: Volkhov, Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        font-size: clamp(24px,4vw,46px);
+      }
+      }
+  }
 }
 
 
