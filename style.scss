@@ -122,7 +122,7 @@ body {
 //? Assa inince Scroll Degismesi kod Kismi Bitis
 
 .hero-section {
-  max-width: 1281px;
+  max-width: 1280px;
   display: flex;
   justify-content: center;
   background-color: #ffffff;
@@ -198,21 +198,20 @@ body {
 }
 
 .deals__wrapper {
-  // padding-block: 80px;
+ 
   background: #f5f5f5;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
   max-width: 1920px;
-  max-height: 768px;
-  margin: 80px auto;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between; /* İki alanı yatayda dağıtır */
+  align-items: center; 
 
-  // padding: 20px;
   .container {
-    max-width: 1281px;
+    max-width: 1280px;
+     flex: 1;
     margin: 0 auto;
-    margin-left: 60px;
+    margin-left: 120px;
     .deals__content {
       max-width: 450px;
     }
@@ -266,7 +265,7 @@ body {
         display: flex;
         align-items: center;
         gap: 30px;
-
+        margin-right: 20px;
         .box {
           span {
             display: flex;
@@ -339,6 +338,11 @@ body {
       opacity: 0.3; 
       transform: scale(1); 
     }
+    .product-one img, .product-two img, .product-three img {
+      width: 100%; 
+    
+      border-radius: 8px;
+    }
 
     .product-one {
       display: flex;
@@ -366,3 +370,71 @@ body {
     }
   }
 }
+
+.arrivals__wrapper{
+
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// @media screen and (min-width: 1600px) and (max-width: 1920px){
+
+//   .deals__wrapper{
+//     .container{
+//       margin-left: 300px;
+//     }
+//   }
+
+// }
+ 
