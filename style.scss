@@ -192,17 +192,12 @@ body {
   }
 }
 
-@font-face {
-  font-family: "DigitalNumbers"; /* Name your font family */
-  src: url(../fonts/DigitalNumbers.ttf); /* Locate the .ttf file within your directory*/
-}
-
 .deals__wrapper {
  
   background: #f5f5f5;
   max-width: 1920px;
   margin: 0 auto;
-  padding: 20px;
+  // padding: 20px;
   display: flex;
   justify-content: space-between; /* İki alanı yatayda dağıtır */
   align-items: center; 
@@ -217,9 +212,9 @@ body {
     }
 
     .deals__h2 {
-      font-family: "Volkhov";
+      font-family: "Josefin Sans", serif;
+      font-weight: bold;
       font-size: clamp(20px, 4vw, 46px);
-      font-weight: 400;
       line-height: 60px;
       color: $grey-black-color;
     }
@@ -381,12 +376,12 @@ body {
 
   .arrivals__container{
     max-width: 1280px;
-   margin: 0 auto;
+    margin: 0 auto;
     .arrivals__content{
    
       .arrivals__title{
-        font-family: Volkhov, Arial, Helvetica, sans-serif;
-        font-weight: 400;
+        font-family: "Lato", serif;
+        font-weight: bold;
         font-size: clamp(24px,4vw,46px);
       }
       }
