@@ -368,9 +368,7 @@ body {
 
 .arrivals__wrapper{
   max-width: 1920px;
-  
   margin: 0 auto;
-  text-align: center;
   padding-top: 100px;
   padding-bottom: 80px;
 
@@ -378,12 +376,53 @@ body {
     max-width: 1280px;
     margin: 0 auto;
     .arrivals__content{
-   
+      text-align: center;
       .arrivals__title{
+      
         font-family: "Lato", serif;
         font-weight: bold;
+       
         font-size: clamp(24px,4vw,46px);
       }
+      .arrivals__text{
+        max-width: 614px;
+        margin: 0 auto;
+        font-size: 16px;
+        line-height: 24px;
+        color: $grey-color;
+        padding-block:20px ;
+      }
+      }
+
+      .arrivals__buttons{
+        text-align: center;
+        display: flex; 
+        justify-content: center;
+        gap: 20px; 
+        flex-wrap: wrap; 
+        
+         .arrivals__button{
+          max-width: 207px;
+          border-radius: 10px;
+          width: 100%;
+          border: none;
+          cursor: pointer;
+          // padding: 16px 20px;
+          height: 52px;
+          color: $grey-color;
+          font-size: 16px;
+          line-height: 16px;
+          font-weight: 400;
+          background-color: $white-dark-color;
+         }
+      }
+      .products__grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+
+        
+
       }
   }
 }
