@@ -416,13 +416,17 @@ body {
           background-color: $white-dark-color;
          }
       }
-      .products__grid {
+      .arrivals__products__grid{
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
         gap: 20px;
 
-        
-
+        .arrivals__card{
+          background-color: $white-color;
+           box-shadow: 0px 0px 90px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 0px 90px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 90px 0px rgba(0,0,0,0.75);
+        }
       }
   }
 }

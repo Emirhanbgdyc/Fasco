@@ -364,8 +364,14 @@ body {
   font-weight: 400;
   background-color: #FAFAFA;
 }
-.arrivals__wrapper .arrivals__container .products__grid {
+.arrivals__wrapper .arrivals__container .arrivals__products__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 20px;
+}
+.arrivals__wrapper .arrivals__container .arrivals__products__grid .arrivals__card {
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 90px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 90px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 90px 0px rgba(0, 0, 0, 0.75);
 }/*# sourceMappingURL=style.css.map */
