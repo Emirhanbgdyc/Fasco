@@ -439,9 +439,20 @@ body {
           object-fit: contain;
           display: block;
           margin: 0 auto;
-          
         }
+        .arrivals__textIcon{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: 10px;
 
+          .product__name{
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 30px;
+            color: $grey-color;
+          }
+        }
       }
     }
   }

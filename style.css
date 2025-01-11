@@ -392,4 +392,16 @@ body {
      object-fit: contain;
   display: block;
   margin: 0 auto;
+}
+.arrivals__wrapper .arrivals__container .arrivals__products__grid .arrivals__card .arrivals__textIcon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+.arrivals__wrapper .arrivals__container .arrivals__products__grid .arrivals__card .arrivals__textIcon .product__name {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #8A8A8A;
 }/*# sourceMappingURL=style.css.map */
