@@ -367,6 +367,7 @@ body {
   background-color: #FAFAFA;
 }
 .arrivals__wrapper .arrivals__container .arrivals__products__grid {
+  padding: 40px;
   display: grid;
   grid-template-columns: repeat(auto-fit, 386px);
   gap: 20px;
@@ -379,4 +380,16 @@ body {
   box-shadow: 0px 0px 90px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 0px 90px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 90px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  padding: 15px;
+  gap: 10px;
+}
+.arrivals__wrapper .arrivals__container .arrivals__products__grid .arrivals__card .arrivals__img {
+  max-width: 100%;
+  max-height: 244px;
+  border-radius: 10px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */
