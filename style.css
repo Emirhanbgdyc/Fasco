@@ -292,7 +292,9 @@ body {
   opacity: 0.3;
   transform: scale(1);
 }
-.deals__wrapper .products-area .product-one img, .deals__wrapper .products-area .product-two img, .deals__wrapper .products-area .product-three img {
+.deals__wrapper .products-area .product-one img,
+.deals__wrapper .products-area .product-two img,
+.deals__wrapper .products-area .product-three img {
   width: 100%;
   border-radius: 8px;
 }
@@ -366,10 +368,13 @@ body {
 }
 .arrivals__wrapper .arrivals__container .arrivals__products__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, 386px);
   gap: 20px;
+  justify-content: center;
 }
 .arrivals__wrapper .arrivals__container .arrivals__products__grid .arrivals__card {
+  width: 386px;
+  height: 438px;
   background-color: #FFFFFF;
   box-shadow: 0px 0px 90px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 0px 90px 0px rgba(0, 0, 0, 0.75);

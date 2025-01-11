@@ -193,18 +193,17 @@ body {
 }
 
 .deals__wrapper {
- 
   background: #f5f5f5;
   max-width: 1920px;
   margin: 0 auto;
   // padding: 20px;
   display: flex;
   justify-content: space-between; /* İki alanı yatayda dağıtır */
-  align-items: center; 
+  align-items: center;
 
   .container {
     max-width: 1280px;
-     flex: 1;
+    flex: 1;
     margin: 0 auto;
     margin-left: 120px;
     .deals__content {
@@ -317,25 +316,27 @@ body {
     gap: 20px;
     margin: 20px 0;
 
-    img{
+    img {
       position: relative;
       transition: transform 0.7s ease, opacity 0.5s ease;
       opacity: 0.5;
       transform: scale(0.8);
     }
 
-    img.active{
+    img.active {
       opacity: 1;
       transform: scale(1);
       // z-index: 1;
     }
-    img.inactive{
-      opacity: 0.3; 
-      transform: scale(1); 
+    img.inactive {
+      opacity: 0.3;
+      transform: scale(1);
     }
-    .product-one img, .product-two img, .product-three img {
-      width: 100%; 
-    
+    .product-one img,
+    .product-two img,
+    .product-three img {
+      width: 100%;
+
       border-radius: 8px;
     }
 
@@ -350,8 +351,6 @@ body {
         left: 24px;
         bottom: 24px;
         text-align: center;
-       
-      
 
         h2 {
           font-weight: 600;
@@ -366,120 +365,72 @@ body {
   }
 }
 
-.arrivals__wrapper{
+.arrivals__wrapper {
   max-width: 1920px;
   margin: 0 auto;
   padding-top: 100px;
   padding-bottom: 80px;
 
-  .arrivals__container{
+  .arrivals__container {
     max-width: 1280px;
     margin: 0 auto;
-    .arrivals__content{
+    .arrivals__content {
       text-align: center;
-      .arrivals__title{
-      
+      .arrivals__title {
         font-family: "Lato", serif;
         font-weight: bold;
-       
-        font-size: clamp(24px,4vw,46px);
+
+        font-size: clamp(24px, 4vw, 46px);
       }
-      .arrivals__text{
+      .arrivals__text {
         max-width: 614px;
         margin: 0 auto;
         font-size: 16px;
         line-height: 24px;
         color: $grey-color;
-        padding-block:20px ;
+        padding-block: 20px;
       }
-      }
+    }
 
-      .arrivals__buttons{
-        text-align: center;
-        display: flex; 
-        justify-content: center;
-        gap: 20px; 
-        flex-wrap: wrap; 
-        
-         .arrivals__button{
-          max-width: 207px;
-          border-radius: 10px;
-          width: 100%;
-          border: none;
-          cursor: pointer;
-          // padding: 16px 20px;
-          height: 52px;
-          color: $grey-color;
-          font-size: 16px;
-          line-height: 16px;
-          font-weight: 400;
-          background-color: $white-dark-color;
-         }
-      }
-      .arrivals__products__grid{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-        gap: 20px;
+    .arrivals__buttons {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
 
-        .arrivals__card{
-          background-color: $white-color;
-           box-shadow: 0px 0px 90px 0px rgba(0,0,0,0.75);
--webkit-box-shadow: 0px 0px 90px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 0px 90px 0px rgba(0,0,0,0.75);
-        }
+      .arrivals__button {
+        max-width: 207px;
+        border-radius: 10px;
+        width: 100%;
+        border: none;
+        cursor: pointer;
+        // padding: 16px 20px;
+        height: 52px;
+        color: $grey-color;
+        font-size: 16px;
+        line-height: 16px;
+        font-weight: 400;
+        background-color: $white-dark-color;
       }
+    }
+    .arrivals__products__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, 386px);
+      gap: 20px;
+      justify-content: center;
+
+      .arrivals__card {
+        width: 386px;
+        height: 438px;
+        background-color: $white-color;
+        box-shadow: 0px 0px 90px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 0px 0px 90px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 90px 0px rgba(0, 0, 0, 0.75);
+      }
+    }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // @media screen and (min-width: 1600px) and (max-width: 1920px){
 
@@ -490,4 +441,3 @@ body {
 //   }
 
 // }
- 
