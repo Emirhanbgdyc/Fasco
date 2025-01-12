@@ -442,11 +442,9 @@ body {
         }
         .arrivals__textIcon{
           display: flex;
-          justify-content: space-between;
           align-items: center;
+          justify-content: space-between;
           margin: 10px;
-          width: 100%;
-          
 
           .product__name{
             font-size: 20px;
@@ -456,9 +454,7 @@ body {
           }
           .product__rating{
             color: $orange-color;
-            max-width: 19px;
-            max-height: 19px;
-           
+           font-size: 19px;
         }
       }
     }

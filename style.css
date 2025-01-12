@@ -395,10 +395,9 @@ body {
 }
 .arrivals__wrapper .arrivals__container .arrivals__products__grid .arrivals__card .arrivals__textIcon {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   margin: 10px;
-  width: 100%;
 }
 .arrivals__wrapper .arrivals__container .arrivals__products__grid .arrivals__card .arrivals__textIcon .product__name {
   font-size: 20px;
@@ -408,6 +407,5 @@ body {
 }
 .arrivals__wrapper .arrivals__container .arrivals__products__grid .arrivals__card .arrivals__textIcon .product__rating {
   color: #FCA120;
-  max-width: 19px;
-  max-height: 19px;
+  font-size: 19px;
 }/*# sourceMappingURL=style.css.map */
