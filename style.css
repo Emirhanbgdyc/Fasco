@@ -418,4 +418,33 @@ body {
   font-size: 12px;
   font-family: "Josefin Sans", serif;
   line-height: 12px;
+}
+.arrivals__wrapper .arrivals__container .arrivals__products__grid .arrivals__card .product__reviews {
+  color: #484848;
+  font-size: 12px;
+  line-height: 18px;
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-bottom: 30px;
+}
+.arrivals__wrapper .arrivals__container .arrivals__products__grid .arrivals__card .product__card__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.arrivals__wrapper .arrivals__container .arrivals__products__grid .arrivals__card .product__card__bottom .product__price {
+  font-size: 24px;
+  letter-spacing: -1%;
+  line-height: 20px;
+  font-weight: 500;
+  color: #8A8A8A;
+}
+.arrivals__wrapper .arrivals__container .arrivals__products__grid .arrivals__card .product__card__bottom .product__status {
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: -1%;
+  line-height: 20px;
+  color: #FF4646;
 }/*# sourceMappingURL=style.css.map */

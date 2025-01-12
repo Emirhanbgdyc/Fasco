@@ -467,6 +467,36 @@ body {
         font-family: "Josefin Sans", serif;
         line-height: 12px;
       }
+      .product__reviews{
+        color: $grey-black-color;
+        font-size: 12px;
+        line-height: 18px;
+        margin-top: 30px;
+        margin-left: 10px;
+        margin-bottom: 30px;
+      }
+      .product__card__bottom{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 10px;
+        margin-right: 10px;
+
+        .product__price{
+          font-size: 24px;
+          letter-spacing: -1%;
+          line-height: 20px;
+          font-weight: 500;
+          color: $grey-color;
+        }
+        .product__status{
+          font-weight: 400;
+          font-size: 12px;
+          letter-spacing: -1%;
+          line-height: 20px;
+          color: $red-color;
+        }
+      }
     }
   }
 }
