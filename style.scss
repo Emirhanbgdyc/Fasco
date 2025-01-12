@@ -445,19 +445,26 @@ body {
           justify-content: space-between;
           align-items: center;
           margin: 10px;
+          width: 100%;
+          
 
           .product__name{
             font-size: 20px;
             font-weight: 500;
             line-height: 30px;
-            color: $grey-color;
+            color: $grey-black-color;
           }
+          .product__rating{
+            color: $orange-color;
+            max-width: 19px;
+            max-height: 19px;
+           
         }
       }
     }
   }
 }
-
+}
 // @media screen and (min-width: 1600px) and (max-width: 1920px){
 
 //   .deals__wrapper{

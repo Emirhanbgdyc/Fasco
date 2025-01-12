@@ -398,10 +398,16 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 10px;
+  width: 100%;
 }
 .arrivals__wrapper .arrivals__container .arrivals__products__grid .arrivals__card .arrivals__textIcon .product__name {
   font-size: 20px;
   font-weight: 500;
   line-height: 30px;
-  color: #8A8A8A;
+  color: #484848;
+}
+.arrivals__wrapper .arrivals__container .arrivals__products__grid .arrivals__card .arrivals__textIcon .product__rating {
+  color: #FCA120;
+  max-width: 19px;
+  max-height: 19px;
 }/*# sourceMappingURL=style.css.map */
