@@ -397,7 +397,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 .arrivals__wrapper .arrivals__container .arrivals__products__grid .arrivals__card .arrivals__textIcon .product__name {
   font-size: 20px;
@@ -408,4 +410,12 @@ body {
 .arrivals__wrapper .arrivals__container .arrivals__products__grid .arrivals__card .arrivals__textIcon .product__rating {
   color: #FCA120;
   font-size: 19px;
+}
+.arrivals__wrapper .arrivals__container .arrivals__products__grid .arrivals__card .product__brand {
+  color: #8A8A8A;
+  margin-left: 10px;
+  font-weight: 500;
+  font-size: 12px;
+  font-family: "Josefin Sans", serif;
+  line-height: 12px;
 }/*# sourceMappingURL=style.css.map */
