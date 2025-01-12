@@ -430,9 +430,9 @@ body {
         -moz-box-shadow: 0px 0px 90px 0px rgba(0, 0, 0, 0.75);
         border-radius: 10px;
         padding: 15px;
-        gap: 10px; 
+        gap: 10px;
 
-        .arrivals__img{
+        .arrivals__img {
           max-width: 100%;
           max-height: 244px;
           border-radius: 10px;
@@ -440,7 +440,7 @@ body {
           display: block;
           margin: 0 auto;
         }
-        .arrivals__textIcon{
+        .arrivals__textIcon {
           display: flex;
           align-items: center;
           justify-content: space-between;
@@ -448,58 +448,58 @@ body {
           margin-top: 10px;
           margin-left: 10px;
 
-          .product__name{
+          .product__name {
             font-size: 20px;
             font-weight: 500;
             line-height: 30px;
             color: $grey-black-color;
           }
-          .product__rating{
+          .product__rating {
             color: $orange-color;
-           font-size: 19px;
+            font-size: 19px;
+          }
         }
-      }
-      .product__brand{
-        color: $grey-color;
-        margin-left: 10px;
-        font-weight: 500;
-        font-size: 12px;
-        font-family: "Josefin Sans", serif;
-        line-height: 12px;
-      }
-      .product__reviews{
-        color: $grey-black-color;
-        font-size: 12px;
-        line-height: 18px;
-        margin-top: 30px;
-        margin-left: 10px;
-        margin-bottom: 30px;
-      }
-      .product__card__bottom{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-left: 10px;
-        margin-right: 10px;
-
-        .product__price{
-          font-size: 24px;
-          letter-spacing: -1%;
-          line-height: 20px;
-          font-weight: 500;
+        .product__brand {
           color: $grey-color;
-        }
-        .product__status{
-          font-weight: 400;
+          margin-left: 10px;
+          font-weight: 500;
           font-size: 12px;
-          letter-spacing: -1%;
-          line-height: 20px;
-          color: $red-color;
+          font-family: "Josefin Sans", serif;
+          line-height: 12px;
+        }
+        .product__reviews {
+          color: $grey-black-color;
+          font-size: 12px;
+          line-height: 18px;
+          margin-top: 30px;
+          margin-left: 10px;
+          margin-bottom: 30px;
+        }
+        .product__card__bottom {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-left: 10px;
+          margin-right: 10px;
+
+          .product__price {
+            font-size: 24px;
+            letter-spacing: -1%;
+            line-height: 20px;
+            font-weight: 500;
+            color: $grey-color;
+          }
+          .product__status {
+            font-weight: 400;
+            font-size: 12px;
+            letter-spacing: -1%;
+            line-height: 20px;
+            color: $red-color;
+          }
         }
       }
     }
   }
-}
 }
 // @media screen and (min-width: 1600px) and (max-width: 1920px){
 
