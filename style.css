@@ -447,4 +447,23 @@ body {
   letter-spacing: -1%;
   line-height: 20px;
   color: #FF4646;
+}
+.arrivals__wrapper .arrivals__container .arrivals__bottom__btn {
+  max-width: 207px;
+  width: 100%;
+  color: #ffffff;
+  height: 56px;
+  background-color: #000000;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.arrivals__wrapper .arrivals__container .arrivals__bottom__btn a {
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: "Josefin Sans", serif;
 }/*# sourceMappingURL=style.css.map */

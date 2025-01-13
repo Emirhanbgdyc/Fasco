@@ -370,7 +370,7 @@ body {
   margin: 0 auto;
   padding-top: 100px;
   padding-bottom: 80px;
-
+  
   .arrivals__container {
     max-width: 1280px;
     margin: 0 auto;
@@ -497,6 +497,26 @@ body {
             color: $red-color;
           }
         }
+      }
+    }
+    .arrivals__bottom__btn{
+      max-width: 207px;
+      width: 100%;
+      color: #ffffff;
+      height:56px ;
+      background-color: $black-color;
+      border-radius: 10px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center; 
+      
+      a{
+        color:$white-color;
+        font-size: 16px;
+        line-height: 16px;
+        font-weight: 400;
+        font-family: "Josefin Sans", serif;;
       }
     }
   }

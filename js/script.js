@@ -1,3 +1,6 @@
+//? ---------Bu kisim careouselin javascript kodlari ---------------- 
+
+
 const leftButton = document.querySelector(".left-btn");
 const rightButton = document.querySelector(".right-btn");
 const productsImg = document.querySelectorAll(".products-area img");
@@ -34,3 +37,4 @@ const changeImages = () => {
         }
     });
 };
+//? ---------Bu kisim careouselin javascript kodlari bitisi ---------------- 
