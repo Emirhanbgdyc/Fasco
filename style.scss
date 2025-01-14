@@ -610,13 +610,23 @@ body {
       .featured_collec{
         display: flex;
         align-items: center;
-        gap: 10px;
+        
 
-        .featured_collec_p2{
+        .f_size{
           font-weight: 400;
           font-size: 16px;
           line-height: 24px;
           color: $normal-grey-color;
+        }
+
+        .f_buttons{
+          border-radius:10px;
+          background-color: $black-color;
+          max-width: 53px;
+          width: 100%;
+          min-height: 28px;
+          margin: 0 0 0 20px;
+          color:$white-color;
         }
 
       }

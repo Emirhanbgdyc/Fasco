@@ -552,11 +552,19 @@ body {
 .featured__slider .featured__container .featured__collec__div .featured_collec {
   display: flex;
   align-items: center;
-  gap: 10px;
 }
-.featured__slider .featured__container .featured__collec__div .featured_collec .featured_collec_p2 {
+.featured__slider .featured__container .featured__collec__div .featured_collec .f_size {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #767676;
+}
+.featured__slider .featured__container .featured__collec__div .featured_collec .f_buttons {
+  border-radius: 10px;
+  background-color: #000000;
+  max-width: 53px;
+  width: 100%;
+  min-height: 28px;
+  margin: 0 0 0 20px;
+  color: #FFFFFF;
 }/*# sourceMappingURL=style.css.map */
