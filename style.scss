@@ -522,12 +522,52 @@ body {
     }
   }
 }
+
+.featured__slider{
+  
+  max-width: 1920px;
+  margin: 50px auto;
+  .featured__container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+    .featured__images{
+      // text-align: center;
+      position: relative;
+      padding-right: clamp(20px, 10vw, 120px);
+     
+      max-height: 570px;
+      max-width: 900px;
+
+      .f_img{
+      max-height: 570px;
+    height: 100%;
+   width: 100%;
+  object-fit: contain; 
+}
+
+    }
+
+  }
+
+}
+
+
+
+
+
+
 // @media screen and (min-width: 1600px) and (max-width: 1920px){
 
-//   .deals__wrapper{
-//     .container{
-//       margin-left: 300px;
+//   .featured__slider{
+//     .featured__container{
+       // gap: 50px;
+//       .featured__images{
+//         padding-left: clamp(20px, 5.4vw, 120px);
+//         left: 100px;
+//       }
 //     }
 //   }
-
+  
 // }

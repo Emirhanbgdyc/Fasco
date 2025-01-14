@@ -467,4 +467,27 @@ body {
   line-height: 16px;
   font-weight: 400;
   font-family: "Josefin Sans", serif;
+}
+
+.featured__slider {
+  max-width: 1920px;
+  margin: 50px auto;
+}
+.featured__slider .featured__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.featured__slider .featured__container .featured__images {
+  position: relative;
+  padding-right: clamp(20px, 10vw, 120px);
+  max-height: 570px;
+  max-width: 900px;
+}
+.featured__slider .featured__container .featured__images .f_img {
+  max-height: 570px;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }/*# sourceMappingURL=style.css.map */
