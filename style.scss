@@ -370,7 +370,7 @@ body {
   margin: 0 auto;
   padding-top: 100px;
   padding-bottom: 80px;
-  
+
   .arrivals__container {
     max-width: 1280px;
     margin: 0 auto;
@@ -499,81 +499,72 @@ body {
         }
       }
     }
-    .arrivals__bottom__btn{
+    .arrivals__bottom__btn {
       max-width: 207px;
       width: 100%;
       color: #ffffff;
-      height:56px ;
+      height: 56px;
       background-color: $black-color;
       border-radius: 10px;
-      display: flex; 
-      align-items: center; 
-      justify-content: center; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
       margin: 0 auto;
       text-align: center;
-      
-      a{
-        color:$white-color;
+
+      a {
+        color: $white-color;
         font-size: 16px;
         line-height: 16px;
         font-weight: 400;
-        font-family: "Josefin Sans", serif;;
+        font-family: "Josefin Sans", serif;
       }
     }
   }
 }
 
-.featured__slider{
-  
+.featured__slider {
   max-width: 1920px;
   margin: 50px auto;
-  .featured__container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
- 
-    .featured__images{
+  .featured__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .featured__images {
       // text-align: center;
       position: relative;
       padding-right: clamp(20px, 10vw, 120px);
-     
+
       max-height: 570px;
       max-width: 900px;
 
-      .f_img{
-      max-height: 570px;
-    height: 100%;
-   width: 100%;
-  object-fit: contain; 
-}
-    .f_img1{
-      position: absolute;
+      .f_img {
+        max-height: 570px;
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+      }
+      .f_img1 {
+        position: absolute;
+      }
+      .f_img6 {
+        position: absolute;
+      }
     }
-    .f_img6{
-      position: absolute;
-    }
-
-    }
-
   }
-
 }
-
-
-
-
-
 
 // @media screen and (min-width: 1600px) and (max-width: 1920px){
 
 //   .featured__slider{
 //     .featured__container{
-       // gap: 50px;
+// gap: 50px;
 //       .featured__images{
 //         padding-left: clamp(20px, 5.4vw, 120px);
 //         left: 100px;
 //       }
 //     }
 //   }
-  
+
 // }
