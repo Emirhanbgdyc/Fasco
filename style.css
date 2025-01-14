@@ -534,4 +534,12 @@ body {
   margin: 30px 0;
   font-size: 46px;
   line-height: 59.34px;
+}
+.featured__slider .featured__container .featured__collec__div .featured_collec_h3 {
+  text-decoration: underline;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+  border-bottom: solid 1px;
 }/*# sourceMappingURL=style.css.map */
