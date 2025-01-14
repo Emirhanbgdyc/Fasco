@@ -553,4 +553,10 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+.featured__slider .featured__container .featured__collec__div .featured_collec .featured_collec_p2 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #767676;
 }/*# sourceMappingURL=style.css.map */
