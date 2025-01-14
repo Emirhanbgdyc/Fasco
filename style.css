@@ -479,6 +479,7 @@ body {
   align-items: center;
 }
 .featured__slider .featured__container .featured__images {
+  text-align: center;
   position: relative;
   padding-right: clamp(20px, 10vw, 120px);
   max-height: 570px;
@@ -492,6 +493,15 @@ body {
      object-fit: contain;
 }
 .featured__slider .featured__container .featured__images .f_img1 {
+  position: absolute;
+}
+.featured__slider .featured__container .featured__images .f_img2 {
+  position: absolute;
+}
+.featured__slider .featured__container .featured__images .f_img3 {
+  position: absolute;
+}
+.featured__slider .featured__container .featured__images .f_img4 {
   position: absolute;
 }
 .featured__slider .featured__container .featured__images .f_img6 {

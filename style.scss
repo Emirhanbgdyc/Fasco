@@ -532,12 +532,12 @@ body {
     align-items: center;
 
     .featured__images {
-      // text-align: center;
+      text-align: center;
       position: relative;
       padding-right: clamp(20px, 10vw, 120px);
-
       max-height: 570px;
       max-width: 900px;
+      // left: 35px;
 
       .f_img {
         max-height: 570px;
@@ -548,9 +548,19 @@ body {
       .f_img1 {
         position: absolute;
       }
+      .f_img2{
+        position: absolute;
+      }
+      .f_img3{
+        position: absolute;
+      }
+      .f_img4{
+        position: absolute;
+      }
       .f_img6 {
         position: absolute;
       }
+
     }
   }
 }
