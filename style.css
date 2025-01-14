@@ -541,7 +541,6 @@ body {
   line-height: 24px;
   font-weight: 400;
   color: #000000;
-  border-bottom: solid 1px;
 }
 .featured__slider .featured__container .featured__collec__div .featured_collec_p1 {
   font-weight: 400;
@@ -549,4 +548,9 @@ body {
   padding: 20px 0px;
   max-width: 515px;
   color: #767676;
+}
+.featured__slider .featured__container .featured__collec__div .featured_collec {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }/*# sourceMappingURL=style.css.map */
