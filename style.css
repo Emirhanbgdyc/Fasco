@@ -521,4 +521,10 @@ body {
   background-position-x: -80px;
   position: relative;
   z-index: -10;
+}
+.featured__slider .featured__container .featured__collec__div .featured_collec_h1 {
+  color: #767676;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
 }/*# sourceMappingURL=style.css.map */
