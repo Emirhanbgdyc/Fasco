@@ -548,24 +548,23 @@ body {
       .f_img1 {
         position: absolute;
       }
-      .f_img2{
+      .f_img2 {
         position: absolute;
       }
-      .f_img3{
+      .f_img3 {
         position: absolute;
       }
-      .f_img4{
+      .f_img4 {
         position: absolute;
       }
-      .f_img5{
+      .f_img5 {
         position: absolute;
       }
       .f_img6 {
         position: absolute;
       }
-
     }
-    .featured__collec__div{
+    .featured__collec__div {
       flex: 1;
       text-align: left;
       padding-left: clamp(100px, 14vw, 300px);
@@ -577,65 +576,61 @@ body {
       position: relative;
       z-index: -10;
 
-      .featured_collec_h1{
+      .featured_collec_h1 {
         color: $normal-grey-color;
         font-size: 16px;
         line-height: 24px;
         font-weight: 400;
       }
-      .featured_collec_h2{
+      .featured_collec_h2 {
         font-weight: 400;
-        color:$grey-black-color;
-        margin: 30px 0; 
+        color: $grey-black-color;
+        margin: 30px 0;
         font-size: 46px;
         line-height: 59.34px;
       }
-      .featured_collec_h3{
+      .featured_collec_h3 {
         text-decoration: underline;
         font-size: 16px;
         line-height: 24px;
         font-weight: 400;
         color: $black-color;
-       
       }
 
-      .featured_collec_p1{
+      .featured_collec_p1 {
         font-weight: 400;
-  font-size: 16px;
-  padding: 20px 0px;
-  max-width: 515px;
+        font-size: 16px;
+        padding: 20px 0px;
+        max-width: 515px;
         color: $normal-grey-color;
       }
 
-      .featured_collec{
+      .featured_collec {
         display: flex;
         align-items: center;
-        
 
-        .f_size{
+        .f_size {
           font-weight: 400;
           font-size: 16px;
           line-height: 24px;
           color: $normal-grey-color;
         }
 
-        .f_buttons{
-          border-radius:10px;
+        .f_buttons {
+          border-radius: 10px;
           background-color: $black-color;
           max-width: 53px;
           width: 100%;
           min-height: 28px;
           margin: 0 0 0 20px;
-          color:$white-color;
+          color: $white-color;
         }
-
       }
-      .featured_collec_p2{
-        font-size: 500;
+      .featured_collec_p2 {
+        font-weight: 500;
         font-size: 28px;
         padding: 20px 0px;
       }
-
     }
   }
 }
