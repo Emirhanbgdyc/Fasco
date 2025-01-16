@@ -495,9 +495,13 @@ body {
 }
 .featured__slider .featured__container .featured__images .f_img1 {
   position: absolute;
+  left: -1%;
+  top: 48%;
 }
 .featured__slider .featured__container .featured__images .f_img2 {
   position: absolute;
+  left: 2%;
+  top: 20%;
 }
 .featured__slider .featured__container .featured__images .f_img3 {
   position: absolute;
