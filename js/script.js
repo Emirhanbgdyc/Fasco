@@ -38,3 +38,4 @@ const changeImages = () => {
     });
 };
 //? ---------Bu kisim careouselin javascript kodlari bitisi ---------------- 
+

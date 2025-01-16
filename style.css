@@ -513,13 +513,15 @@ body {
 }
 .featured__slider .featured__container .featured__collec__div {
   flex: 1;
+  background: url("../images/featured-slider/bg.svg") no-repeat;
   text-align: left;
-  padding-left: clamp(100px, 14vw, 300px);
   padding-top: 60px;
   padding-bottom: 60px;
-  background-image: url("../images/featured-slider/bg.svg");
+  padding-left: clamp(50px, 5vw, 250px);
   position: relative;
   z-index: -10;
+  background-size: cover;
+  background-position: center;
 }
 .featured__slider .featured__container .featured__collec__div .featured_collec_h1 {
   color: #767676;

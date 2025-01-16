@@ -566,15 +566,19 @@ body {
     }
     .featured__collec__div {
       flex: 1;
+      background: url("../images/featured-slider/bg.svg") no-repeat;
       text-align: left;
-      padding-left: clamp(100px, 14vw, 300px);
       padding-top: 60px;
       padding-bottom: 60px;
-      background-image: url("../images/featured-slider/bg.svg");
-      // background-size: 179%;
-      // background-position-x: -60px;
+      padding-left: clamp(50px, 5vw, 250px);
       position: relative;
       z-index: -10;
+      // aspect-ratio: 16 / 9; 
+      background-size: cover;
+      background-position: center;
+    
+      
+
 
       .featured_collec_h1 {
         color: $normal-grey-color;
