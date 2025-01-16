@@ -518,7 +518,6 @@ body {
 }
 .featured__slider .featured__container .featured__collec__div {
   flex: 1;
-  background: url("../images/featured-slider/bg.svg") no-repeat;
   text-align: left;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -593,4 +592,69 @@ body {
   font-size: 16px;
   line-height: 16px;
   border-radius: 10px;
+}
+
+@media (max-width: 1750px) {
+  .featured__slider .featured__container .featured__images .f_img6 {
+    display: none;
+  }
+  .featured__slider .featured__container .featured__collec__div {
+    background-color: #DADADA;
+    padding-left: clamp(20px, 7vw, 80px);
+    border-left: solid 2px #000000;
+  }
+}
+@media (max-width: 1400px) {
+  .featured__slider .featured__container .featured__images .f_img6 {
+    display: none;
+  }
+  .featured__slider .featured__container .featured__collec__div {
+    background-color: #DADADA;
+    padding-left: clamp(20px, 7vw, 80px);
+    border-left: solid 2px #000000;
+  }
+}
+@media (max-width: 1000px) {
+  .featured__slider .featured__container {
+    display: block;
+  }
+  .featured__slider .featured__container .featured__images {
+    display: flex;
+    justify-content: center;
+    left: 0;
+    margin: 0px auto;
+  }
+  .featured__slider .featured__container .featured__images .f_img {
+    max-height: clamp(100px, 100vw, 570px);
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 60%;
+  }
+  .featured__slider .featured__container .featured__images .f_img1,
+  .featured__slider .featured__container .featured__images .f_img2,
+  .featured__slider .featured__container .featured__images .f_img3,
+  .featured__slider .featured__container .featured__images .f_img4,
+  .featured__slider .featured__container .featured__images .f_img5,
+  .featured__slider .featured__container .featured__images .f_img6 {
+    height: 12%;
+  }
+  .featured__slider .featured__container .featured__collec__div {
+    text-align: center;
+    padding: 20px 0px;
+    background-color: #dadada;
+    border: none;
+  }
+  .featured__slider .featured__container .featured__collec__div .featured_collec {
+    display: flex;
+    justify-content: center;
+  }
+  .featured__slider .featured__container .featured__collec__div .featured_collec_h3 {
+    display: inline-block;
+  }
+  .featured__slider .featured__container .featured__collec__div .featured_collec_p1 {
+    margin: 0px auto;
+  }
+  .featured__slider .featured__container .featured__collec__div .featured_div {
+    justify-content: center;
+  }
 }/*# sourceMappingURL=style.css.map */
