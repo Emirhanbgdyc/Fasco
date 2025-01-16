@@ -505,6 +505,7 @@ body {
 }
 .featured__slider .featured__container .featured__images .f_img3 {
   position: absolute;
+  left: 40%;
 }
 .featured__slider .featured__container .featured__images .f_img4 {
   position: absolute;
