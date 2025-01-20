@@ -69,7 +69,7 @@ const products = {
 
 let activeCategory = null;
 
-// Butonlara tıklama olaylarını ekliyoruz
+
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
     const category = button.textContent.trim();
