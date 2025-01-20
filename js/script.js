@@ -39,3 +39,5 @@ const changeImages = () => {
 };
 //? ---------Bu kisim careouselin javascript kodlari bitisi ---------------- 
 
+
+const buttons = document.querySelectorAll(".arrivals__buttons");
