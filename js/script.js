@@ -38,67 +38,64 @@ const changeImages = () => {
     });
 };
 //? ---------Bu kisim careouselin javascript kodlari bitisi ---------------- 
-const products = {
-    "Men's Fashion": [
-      { name: "Casual Shirt", brand: "Al Karam", price: "$55.00", status: "In Stock", image: "images/arrivals__grid__img/arrivals-img-three.svg" },
-      { name: "Formal Pants", brand: "Al Karam", price: "$75.00", status: "Limited Stock", image: "images/arrivals__grid__img/arrivals-img-three.svg" }
-    ],
-    "Women's Fashion": [
-      { name: "Shiny Dress", brand: "Al Karam", price: "$95.50", status: "Almost Sold Out", image: "images/arrivals__grid__img/arrivals-img-three.svg" },
-      { name: "Long Dress", brand: "Al Karam", price: "$95.50", status: "Almost Sold Out", image: "images/arrivals__grid__img/arrivals-img-three.svg" }
-    ],
-    "Women Accessories": [
-      { name: "Handbag", brand: "Al Karam", price: "$120.00", status: "New Arrival", image: "images/arrivals__grid__img/arrivals-img-three.svg" },
-      { name: "Scarf", brand: "Al Karam", price: "$25.00", status: "In Stock", image: "images/arrivals__grid__img/arrivals-img-three.svg" }
-    ],
-    // Diğer kategoriler için benzer yapı...
-  };
-  
-  const buttons = document.querySelectorAll(".arrivals__button");
-  const productGrid = document.querySelector(".arrivals__products__grid");
-  let displayedCategories = new Set(); 
-  
+// HTML'deki butonlar ve ürünler için referansları alıyoruz
+const buttons = document.querySelectorAll(".arrivals__button");
+const productsContainer = document.querySelector(".arrivals__products__grid");
 
-  buttons.forEach(button => {
-    button.addEventListener("click", () => {
-      const category = button.textContent.trim();
-      
-      if (displayedCategories.has(category)) {
-       
-        displayedCategories.delete(category);
-      } else {
- 
-        displayedCategories.add(category);
-      }
-      updateProductDisplay(); 
-    });
+// Örnek ürün verileri (Her kategori için farklı ürünler)
+const products = {
+  "Men's Fashion": [
+    { name: "Men's Shirt", image: "images/arrivals__grid__img/arrivals-img-three.svg", brand: "Al Karam", reviews: "1.2k", price: "49.99", status: "Available" },
+    { name: "Men's Jeans", image: "images/arrivals__grid__img/arrivals-img-three.svg", brand: "Al Karam", reviews: "900", price: "69.99", status: "Available" },
+    { name: "Men's Jeans", image: "images/arrivals__grid__img/arrivals-img-three.svg", brand: "Al Karam", reviews: "900", price: "69.99", status: "Available" },
+  ],
+  "Women's Fashion": [
+    { name: "Women's Dress", image: "images/arrivals__grid__img/arrivals-img-one.svg", brand: "Al Karam", reviews: "2.3k", price: "89.99", status: "Almost Sold Out" },
+    { name: "Skirt", image: "images/arrivals__grid__img/arrivals-img-three.svg", brand: "Al Karam", reviews: "1.5k", price: "59.99", status: "Available" },
+  ],
+  "Women Accessories": [
+    { name: "Handbag", image: "images/handbag.jpg", brand: "Al Karam", reviews: "3.1k", price: "120.00", status: "Available" },
+    { name: "Earrings", image: "images/earrings.jpg", brand: "Al Karam", reviews: "500", price: "25.00", status: "Available" },
+  ],
+};
+
+
+let activeCategory = null;
+
+// Butonlara tıklama olaylarını ekliyoruz
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const category = button.textContent.trim();
+
+
+    if (activeCategory === category) {
+      productsContainer.innerHTML = ""; 
+      activeCategory = null;
+    } else {
+    
+      activeCategory = category;
+      productsContainer.innerHTML = "";
+      const productsHTML = products[category]
+        .map((product) => {
+          return `
+            <div class="arrivals__card">
+              <img src="${product.image}" class="arrivals__img" alt="${product.name}" />
+              <div class="arrivals__textIcon">
+                <h3 class="product__name">${product.name}</h3>
+                <div class="product__rating">★★★★★</div>
+              </div>
+              <p class="product__brand">${product.brand}</p>
+              <p class="product__reviews">(${product.reviews}) Customer Reviews</p>
+              <div class="product__card__bottom">
+                <p class="product__price">$${product.price}</p>
+                <p class="product__status">${product.status}</p>
+              </div>
+            </div>
+          `;
+        })
+        .join("");
+
+      productsContainer.innerHTML = productsHTML; 
+    }
   });
-  
-  function updateProductDisplay() {
-    productGrid.innerHTML = ""; 
-    displayedCategories.forEach(category => {
-      const categoryProducts = products[category] || [];
-      categoryProducts.forEach(product => {
-        const productCard = `
-          <div class="arrivals__card">
-            <img src="${product.image}" class="arrivals__img" alt="${product.name}" />
-            <div class="arrivals__textIcon">
-              <h3 class="product__name">${product.name}</h3>
-              <div class="product__rating">★★★★★</div>
-            </div>
-            <p class="product__brand">${product.brand}</p>
-            <p class="product__reviews">(4.1k) Customer Reviews</p>
-            <div class="product__card__bottom">
-              <p class="product__price">${product.price}</p>
-              <p class="product__status">${product.status}</p>
-            </div>
-          </div>
-        `;
-        productGrid.insertAdjacentHTML("beforeend", productCard);
-      });
-    });
-  }
-  
-  // Varsayılan olarak tüm ürünleri göstermek için:
-  // updateProductDisplay();
-  
+});
