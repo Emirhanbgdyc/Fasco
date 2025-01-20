@@ -55,7 +55,10 @@ const products = {
   ],
   "Women's Fashion": [
     { name: "Women's Dress", image: "images/arrivals__grid__img/arrivals-img-one.svg", brand: "Al Karam", reviews: "2.3k", price: "89.99", status: "Almost Sold Out" },
-    { name: "Skirt", image: "images/arrivals__grid__img/arrivals-img-three.svg", brand: "Al Karam", reviews: "1.5k", price: "59.99", status: "Available" },
+    { name: "Shiny Dress", image: "images/arrivals__grid__img/arrivals-img-two.svg", brand: "Al Karam", reviews: "2.3k", price: "89.99", status: "Almost Sold Out" },
+    { name: "Long Dress", image: "images/arrivals__grid__img/arrivals-img-three.svg", brand: "Al Karam", reviews: "2.3k", price: "89.99", status: "Almost Sold Out" },
+    { name: "Full Sweater", image: "images/arrivals__grid__img/arrivals-img-four.svg", brand: "Al Karam", reviews: "2.3k", price: "89.99", status: "Almost Sold Out" },
+    { name: "Skirt", image: "images/arrivals__grid__img/arrivals-img-five.svg", brand: "Al Karam", reviews: "1.5k", price: "59.99", status: "Available" },
   ],
   "Women Accessories": [
     { name: "Handbag", image: "images/handbag.jpg", brand: "Al Karam", reviews: "3.1k", price: "120.00", status: "Available" },
