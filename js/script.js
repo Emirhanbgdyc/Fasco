@@ -42,3 +42,10 @@ const changeImages = () => {
 
 const buttons = document.querySelectorAll(".arrivals__buttons");
 const productGrid =document.querySelector(".arrivals__products__grid");
+
+
+buttons.forEach((button) => {
+    button.addEventListener("click" , ()=>{
+
+    })
+});
