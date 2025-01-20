@@ -46,6 +46,8 @@ const productGrid =document.querySelector(".arrivals__products__grid");
 
 buttons.forEach((button) => {
     button.addEventListener("click" , ()=>{
-
-    })
+        const category = button.textContent.trim();
+        const categoryProducts = products[category] || [];
+        renderProducts(categoryProducts);
+    });
 });
