@@ -38,6 +38,7 @@ const changeImages = () => {
     });
 };
 
+
 //? ---------Bu kisim careouselin javascript kodlari bitisi ---------------- 
 // HTML'deki butonlar ve ürünler için referansları alıyoruz
 const buttons = document.querySelectorAll(".arrivals__button");
