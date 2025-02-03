@@ -107,3 +107,23 @@ buttons.forEach((button) => {
     }
   });
 });
+
+
+
+const buttonColor = document.querySelectorAll('.arrivals__button');
+
+
+buttonColor.forEach((button)=>{
+  button.addEventListener("click", ()=>{
+    removeActive();
+    button.classList.add("aktif");
+  })
+});
+
+
+
+function removeActive(){
+  buttonColor.forEach((button)=>{
+      button.classList.remove("aktif");
+  })
+}
