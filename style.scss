@@ -413,7 +413,12 @@ body {
         font-weight: 400;
         background-color: $white-dark-color;
       }
+      .arrivals__button.aktif{
+        background-color: black;
+        color: white;
+      }
     }
+  
     .arrivals__products__grid {
       padding: 40px;
       display: grid;
