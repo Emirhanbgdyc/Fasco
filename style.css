@@ -367,6 +367,10 @@ body {
   font-weight: 400;
   background-color: #FAFAFA;
 }
+.arrivals__wrapper .arrivals__container .arrivals__buttons .arrivals__button.aktif {
+  background-color: black;
+  color: white;
+}
 .arrivals__wrapper .arrivals__container .arrivals__products__grid {
   padding: 40px;
   display: grid;
