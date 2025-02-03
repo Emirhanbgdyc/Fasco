@@ -414,9 +414,11 @@ body {
         background-color: $white-dark-color;
       }
       .arrivals__button.aktif{
-        background-color: black;
-        color: white;
+        background-color: $black-color;
+        color: $white-color;
+        font-family: "Josefin Sans", serif;
       }
+
     }
   
     .arrivals__products__grid {

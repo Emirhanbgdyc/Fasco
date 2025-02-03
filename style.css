@@ -368,8 +368,9 @@ body {
   background-color: #FAFAFA;
 }
 .arrivals__wrapper .arrivals__container .arrivals__buttons .arrivals__button.aktif {
-  background-color: black;
-  color: white;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: "Josefin Sans", serif;
 }
 .arrivals__wrapper .arrivals__container .arrivals__products__grid {
   padding: 40px;
