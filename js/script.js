@@ -44,7 +44,6 @@ const changeImages = () => {
 const buttons = document.querySelectorAll(".arrivals__button");
 const productsContainer = document.querySelector(".arrivals__products__grid");
 
-// Örnek ürün verileri (Her kategori için farklı ürünler)
 const products = {
   "Men's Fashion": [
     { name: "Men's Shirt white", image: "images/arrivals__grid__img/erkek-one.jpg", brand: "Beymen", reviews: "1.2k", price: "120.99", status: "Almost Sold Out" },
@@ -62,28 +61,19 @@ const products = {
     { name: "Skirt", image: "images/arrivals__grid__img/arrivals-img-five.svg", brand: "Al Karam", reviews: "1.5k", price: "59.99", status: "Available" },
   ],
   "Women Accessories": [
-    { name: "Handbag", image: "images/handbag.jpg", brand: "Al Karam", reviews: "3.1k", price: "120.00", status: "Available" },
-    { name: "Earrings", image: "images/earrings.jpg", brand: "Al Karam", reviews: "500", price: "25.00", status: "Available" },
-  ],
+    { name: "Pembe Boncuk Kolye", image: "images/arrivals__grid__img/Accessories/taki1.jpg", brand: "Perla", reviews: "748", price: "100", status: "Available" },
+    { name: "Sungit Tasi", image: "images/arrivals__grid__img/Accessories/taki2.jpg", brand: "Perla", reviews: "551", price: "85.00", status: "Available" },
+    { name: "Larimar Tasi", image: "images/arrivals__grid__img/Accessories/taki3.jpg", brand: "Perla", reviews: "1051", price: "85.00", status: "Available" },
+    { name: "Kirmizi Ve Mavi Tas", image: "images/arrivals__grid__img/Accessories/taki4.jpg", brand: "Perla", reviews: "351", price: "85.00", status: "Available" },
+    ],
 };
 
 
-let activeCategory = null;
+let activeCategory ="ALL";
 
 
-buttons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const category = button.textContent.trim();
-
-
-    if (activeCategory === category) {
-      productsContainer.innerHTML = ""; 
-      activeCategory = null;
-    } else {
-    
-      activeCategory = category;
-      productsContainer.innerHTML = "";
-      const productsHTML = products[category]
+const renderProducts = (category) =>{
+  const productsHTML = products[category]
         .map((product) => {
           return `
             <div class="arrivals__card">
@@ -105,10 +95,22 @@ buttons.forEach((button) => {
 
       productsContainer.innerHTML = productsHTML; 
     }
-  });
+
+
+    buttons.forEach((button)=>{
+      button.addEventListener("click",()=>{
+        const category = button.textContent.trim();
+
+        buttons.forEach((btn)=>{
+          btn.classList.remove("active");
+        })
+        button.classList.add("active");
+        activeCategory =category;
+        renderProducts(category);
+      });
 });
 
-
+renderProducts("ALL");
 
 const buttonColor = document.querySelectorAll('.arrivals__button');
 
