@@ -24,8 +24,13 @@ const products = {
     { name: "Kirmizi Ve Mavi Tas", image: "images/arrivals__grid__img/Accessories/taki4.jpg", brand: "Perla", reviews: "351", price: "85.00", status: "Available" },
     ],
     "Men Accessories":[
-        {}
+        {name :"Erkek Aksesuar Seti", image: "images/arrivals__grid__img/men-accessories/aksesuar-set.jpg",brand:"Takılar.com",reviews:1239,price:"200",status:"Accessories Set"},
+        {name :"Erkek için Saat + bileklik", image: "images/arrivals__grid__img/men-accessories/saat-bileklik.jpg",brand:"Takılar.com",reviews:1239,price:"359.99",status:"Accessories Set"},
+        {name :"Erkek Gözlüğü", image: "images/arrivals__grid__img/men-accessories/gözlük.jpg",brand:"Takılar.com",reviews:1239,price:"869.99",status:"Accessories Set"},
     ],
+    "Discount Deals":[
+        {name :"Erkek Aksesuar Seti", image: "images/arrivals__grid__img/men-accessories/aksesuar-set.jpg",brand:"Takılar.com",reviews:1239,discount:"200",deals:"175",status:"Accessories Set"},
+    ]
 };
 
 
@@ -45,7 +50,9 @@ const renderProducts = (category) =>{
               <p class="product__brand">${product.brand}</p>
               <p class="product__reviews">(${product.reviews}) Customer Reviews</p>
               <div class="product__card__bottom">
-                <p class="product__price">$${product.price}</p>
+                ${product.price ? `<p class="product__price">$${product.price}</p>` : ""}
+                ${product.discount ? `<p class="product__price-dıscount">$${product.discount}</p>` : ""}
+                ${product.deals ? `<span class="products__discount">$${product.deals}</span>` : ""}
                 <p class="product__status">${product.status}</p>
               </div>
             </div>
@@ -70,4 +77,4 @@ const renderProducts = (category) =>{
       });
 });
 
-renderProducts("ALL");
+renderProducts("Men's Fashion");
