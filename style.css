@@ -2,6 +2,121 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+.login_wrapper .container {
+  max-width: 1440px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign_wrapper {
+  max-width: 1990px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sign_wrapper .container {
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+}
+.sign_wrapper .container .sign__connection {
+  gap: 20px;
+  display: flex;
+}
+.sign_wrapper .container .sign__connection a {
+  font-family: "Lato", serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #8A8A8A;
+  gap: 20px;
+}
+.sign_wrapper .container .signup__form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.sign_wrapper .container .signup__form input {
+  height: 48px;
+  max-width: 450px;
+  border-radius: 4px;
+  padding-left: 14px;
+  padding-right: 14px;
+  border: 1px solid #D0D0D0;
+  color: #FFFFFF;
+}
+.sign_wrapper .container .signup__form .signup-btn {
+  padding: 20px 69px;
+  height: 48px;
+  max-width: 450px;
+  border-radius: 10px;
+  background-color: #000000;
+  font-size: 16px;
+  line-height: 16px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0%;
+  font-weight: 400;
+}
+.sign_wrapper .container .line__contanier {
+  display: flex;
+  gap: 30px;
+  margin: 20px 0px;
+}
+.sign_wrapper .container .line__contanier span {
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 1.25%;
+  font-family: "Lato", serif;
+  font-weight: 400;
+  color: #8A8A8A;
+}
+.sign_wrapper .container .social-signup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+.sign_wrapper .container .social-signup a .google-btn {
+  max-width: 450px;
+  width: 100%;
+  height: 48px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 1px solid #D0D0D0;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19px;
+  color: #484848;
+  justify-content: center;
+  gap: 6px;
+  background-color: #FFFFFF;
+}
+.sign_wrapper .container .social-signup a .facebook-btn {
+  max-width: 450px;
+  width: 100%;
+  height: 48px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 1px solid #D0D0D0;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19px;
+  color: #484848;
+  justify-content: center;
+  gap: 6px;
+  background-color: #FFFFFF;
+}
+
 * {
   margin: 0;
   padding: 0;
