@@ -16,52 +16,110 @@
 <body>
     <div class="sign_wrapper">
         <div class="container">
+            <!-- Left content: Forms and interactions -->
             <div class="left_content">
                 <div class="sign__main__img">
                     <img src="../images/FASCO.png" alt="FASCO">
                 </div>
+
                 <div class="sign__connection">
-                    <a href="#">LOGIN</a>
-                    <a href="#">SIGN UP</a>
+                    <a href="#" class="tab-link active" data-tab="signup">SIGN UP</a>
+                    <a href="#" class="tab-link" data-tab="login">LOGIN</a>
                 </div>
-                <div class="signup__form">
-                    <input type="text" placeholder="Name">
-                    <input type="text" placeholder="Phone Number">
-                    <input type="email" placeholder="Email">
-                    <input type="password" placeholder="Password">
-                    <button class="signup-btn">Sign up</button>
+                
+                <!-- Signup Form -->
+                <div class="form-container active" id="signup-form">
+                    <div class="signup__form">
+                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="Phone Number">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Password">
+                        <button class="signup-btn">Sign up</button>
+                    </div>
+                    <div class="line__contanier">
+                        <img class="line" src="../images/singup-banner/left.svg" alt="left çizgi">
+                        <span>Sign up with</span>
+                        <img class="line" src="../images/singup-banner/right.svg" alt="right çizgi">
+                    </div>
+                    <div class="social-signup">
+                        <a href="#">
+                            <button class="google-btn">
+                                <img src="../images/singup-banner/Google.svg" alt="Google">
+                                Google
+                            </button>
+                        </a>
+                        <a href="#">
+                            <button class="facebook-btn">
+                                <img src="../images/singup-banner/facebook.svg" alt="Facebook">
+                                Facebook
+                            </button>
+                        </a>
+                    </div>
                 </div>
-                <div class="line__contanier">
-                    <img class="line" src="../images/singup-banner/left.svg" alt="left çizgi">
-                    <span>Sign up with</span>
-                    <img class="line" src="../images/singup-banner/right.svg" alt="left çizgi">
+                
+                <!-- Login Form -->
+                <div class="form-container" id="login-form">
+                    <div class="signup__form">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Password">
+                        <button class="signup-btn">Login</button>
+                    </div>
+                    <div class="line__contanier">
+                        <img class="line" src="../images/singup-banner/left.svg" alt="left çizgi">
+                        <span>Login with</span>
+                        <img class="line" src="../images/singup-banner/right.svg" alt="right çizgi">
+                    </div>
+                    <div class="social-signup">
+                        <a href="#">
+                            <button class="google-btn">
+                                <img src="../images/singup-banner/Google.svg" alt="Google">
+                                Google
+                            </button>
+                        </a>
+                        <a href="#">
+                            <button class="facebook-btn">
+                                <img src="../images/singup-banner/facebook.svg" alt="Facebook">
+                                Facebook
+                            </button>
+                        </a>
+                    </div>
                 </div>
-                <div class="social-signup">
-                    <a href="#">
-                        <button class="google-btn">
-                            <img src="../images/singup-banner/Google.svg" alt="">
-                            Google
-                        </button>
-                    </a>
-                    <ahref="#">
-                        <button class="facebook-btn">
-                            <img src="../images/singup-banner/facebook.svg" alt="">
-                            Facebook
-                        </button>
-                    </a>
-                </div>
+                
                 <p class="footer">&copy; 2021 Travling. All Rights Reserved</p>
             </div>
+            
+            <!-- Right content: Banner and carousel -->
             <div class="side__right">
                 <div class="side__banner">
                     <div class="banner_content">
                         <p>Shop with us like<br> you are in the shop<br> not in the mall</p>
-                        <img src="../images/singup-banner/profile-img.svg" alt="profile-img">
+                        
+                        <!-- Carousel -->
+                        <div class="carousel-container">
+                            <div class="carousel-slides">
+                                <div class="carousel-slide active">
+                                    <img src="../images/singup-banner/profile-img.svg" alt="profile-img-1">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="../images/singup-banner/right2.svg" alt="profile-img-2">
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="../images/singup-banner/righ3.svg" alt="profile-img-3">
+                                </div>
+                            </div>
+                            
+                            <div class="carousel-dots">
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="../js/sign_slider.js"></script>
     
 </body>
 </html>
