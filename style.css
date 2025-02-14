@@ -10,46 +10,88 @@
 }
 
 .sign_wrapper {
-  max-width: 1990px;
+  max-width: 1920px;
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 .sign_wrapper .container {
   max-width: 1440px;
   width: 100%;
   margin: auto;
-}
-.sign_wrapper .container .sign__connection {
-  gap: 20px;
   display: flex;
+  justify-content: space-between;
 }
-.sign_wrapper .container .sign__connection a {
+.sign_wrapper .container .left_content {
+  width: 50%;
+  padding: 20px 40px;
+}
+.sign_wrapper .container .left_content .sign__main__img {
+  margin-bottom: 30px;
+}
+.sign_wrapper .container .left_content .sign__main__img img {
+  max-width: 200px;
+}
+.sign_wrapper .container .left_content .sign__connection {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.sign_wrapper .container .left_content .sign__connection a {
   font-family: "Lato", serif;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 33px;
   color: #8A8A8A;
-  gap: 20px;
+  text-decoration: none;
+  padding-bottom: 5px;
+  transition: all 0.3s ease;
 }
-.sign_wrapper .container .signup__form {
+.sign_wrapper .container .left_content .sign__connection a.active {
+  color: #000000;
+  border-bottom: 2px solid #000000;
+}
+.sign_wrapper .container .left_content .sign__connection a:hover {
+  color: #646464;
+}
+.sign_wrapper .container .left_content .form-container {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.sign_wrapper .container .left_content .form-container.active {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+.sign_wrapper .container .left_content .signup__form {
   display: flex;
-  justify-content: center;
   flex-direction: column;
   gap: 20px;
 }
-.sign_wrapper .container .signup__form input {
+.sign_wrapper .container .left_content .signup__form input {
   height: 48px;
   max-width: 450px;
   border-radius: 4px;
   padding-left: 14px;
   padding-right: 14px;
   border: 1px solid #D0D0D0;
-  color: #FFFFFF;
+  color: #484848;
+  font-size: 16px;
 }
-.sign_wrapper .container .signup__form .signup-btn {
-  padding: 20px 69px;
+.sign_wrapper .container .left_content .signup__form input:focus {
+  outline: none;
+  border-color: #aaaaaa;
+}
+.sign_wrapper .container .left_content .signup__form input::-moz-placeholder {
+  color: #bdbdbd;
+}
+.sign_wrapper .container .left_content .signup__form input::placeholder {
+  color: #bdbdbd;
+}
+.sign_wrapper .container .left_content .signup__form .signup-btn {
+  padding: 15px 0;
   height: 48px;
   max-width: 450px;
   border-radius: 10px;
@@ -62,28 +104,44 @@
   justify-content: center;
   letter-spacing: 0%;
   font-weight: 400;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
-.sign_wrapper .container .line__contanier {
+.sign_wrapper .container .left_content .signup__form .signup-btn:hover {
+  background-color: #262626;
+}
+.sign_wrapper .container .left_content .line__contanier {
   display: flex;
-  gap: 30px;
-  margin: 20px 0px;
+  align-items: center;
+  gap: 15px;
+  margin: 20px 0;
+  max-width: 450px;
 }
-.sign_wrapper .container .line__contanier span {
+.sign_wrapper .container .left_content .line__contanier .line {
+  flex: 1;
+  height: 1px;
+}
+.sign_wrapper .container .left_content .line__contanier span {
   font-size: 14px;
   line-height: 19px;
   letter-spacing: 1.25%;
   font-family: "Lato", serif;
   font-weight: 400;
   color: #8A8A8A;
+  white-space: nowrap;
 }
-.sign_wrapper .container .social-signup {
+.sign_wrapper .container .left_content .social-signup {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 16px;
-}
-.sign_wrapper .container .social-signup a .google-btn {
   max-width: 450px;
+}
+.sign_wrapper .container .left_content .social-signup a {
+  text-decoration: none;
+}
+.sign_wrapper .container .left_content .social-signup a .google-btn,
+.sign_wrapper .container .left_content .social-signup a .facebook-btn {
   width: 100%;
   height: 48px;
   padding: 12px 24px;
@@ -96,28 +154,23 @@
   line-height: 19px;
   color: #484848;
   justify-content: center;
-  gap: 6px;
+  gap: 10px;
   background-color: #FFFFFF;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
-.sign_wrapper .container .social-signup a .facebook-btn {
-  max-width: 450px;
-  width: 100%;
-  height: 48px;
-  padding: 12px 24px;
-  border-radius: 8px;
-  border: 1px solid #D0D0D0;
-  display: flex;
-  align-items: center;
+.sign_wrapper .container .left_content .social-signup a .google-btn:hover,
+.sign_wrapper .container .left_content .social-signup a .facebook-btn:hover {
+  background-color: #f2f2f2;
+  border-color: #b7b7b7;
+}
+.sign_wrapper .container .left_content .social-signup a .google-btn img,
+.sign_wrapper .container .left_content .social-signup a .facebook-btn img {
+  width: 20px;
+  height: 20px;
+}
+.sign_wrapper .container .left_content .footer {
   font-size: 14px;
-  font-weight: 500;
-  line-height: 19px;
-  color: #484848;
-  justify-content: center;
-  gap: 6px;
-  background-color: #FFFFFF;
-}
-.sign_wrapper .container .footer {
-  font-size: 16px;
   letter-spacing: 0.5%;
   line-height: 22px;
   font-weight: 400;
@@ -127,21 +180,125 @@
 }
 .sign_wrapper .container .side__right {
   width: 50%;
-  background: linear-gradient(to right, #e0e0e0, #c0c0c0);
-  border-radius: 10px;
+  background: linear-gradient(135deg, #e0e0e0, #a0a0a0);
+  border-radius: 12px;
+  overflow: hidden;
   display: flex;
   align-items: center;
-  justify-content: center;
   position: relative;
 }
 .sign_wrapper .container .side__right .side__banner {
   width: 100%;
   height: 100%;
+  padding: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.sign_wrapper .container .side__right .side__banner .banner_content {
+  text-align: center;
+}
+.sign_wrapper .container .side__right .side__banner .banner_content p {
+  font-size: 28px;
+  line-height: 1.4;
+  color: #FFFFFF;
+  font-weight: 500;
+  margin-bottom: 40px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+.sign_wrapper .container .side__right .carousel-container {
+  width: 100%;
+  position: relative;
+}
+.sign_wrapper .container .side__right .carousel-container .carousel-slides {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+.sign_wrapper .container .side__right .carousel-container .carousel-slides .carousel-slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sign_wrapper .container .side__right .carousel-container .carousel-slides .carousel-slide.active {
+  opacity: 1;
+}
+.sign_wrapper .container .side__right .carousel-container .carousel-slides .carousel-slide img {
+  max-width: 300px;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.sign_wrapper .container .side__right .carousel-container .carousel-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.sign_wrapper .container .side__right .carousel-container .carousel-dots .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.sign_wrapper .container .side__right .carousel-container .carousel-dots .dot.active {
+  background-color: #FFFFFF;
+  transform: scale(1.2);
+}
+.sign_wrapper .container .side__right .carousel-container .carousel-dots .dot:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
 
+@media (max-width: 768px) {
+  .sign_wrapper .container {
+    flex-direction: column;
+  }
+  .sign_wrapper .container .left_content {
+    width: 100%;
+  }
+  .sign_wrapper .container .side__right {
+    width: 100%;
+    padding: 20px;
+  }
+  .sign_wrapper .container .side__right {
+    order: -1;
+    min-height: 300px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 576px) {
+  .sign_wrapper .container .left_content {
+    width: 100%;
+  }
+  .sign_wrapper .container .left_content .sign__connection {
+    gap: 15px;
+  }
+  .sign_wrapper .container .left_content .sign__connection a {
+    font-size: 18px;
+  }
+  .sign_wrapper .container .left_content .signup__form input,
+  .sign_wrapper .container .left_content .signup__form .signup-btn {
+    max-width: 100%;
+  }
+  .sign_wrapper .container .left_content .social-signup a .google-btn,
+  .sign_wrapper .container .left_content .social-signup a .facebook-btn {
+    max-width: 100%;
+  }
+  .sign_wrapper .container .side__right {
+    display: none;
+  }
+  .sign_wrapper .container .side__right .side__banner .banner_content p {
+    font-size: 20px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
