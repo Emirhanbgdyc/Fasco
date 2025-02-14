@@ -1,44 +1,98 @@
-.sign_wrapper{
-
-        max-width: 1990px;
-        height: 100vh;
+.sign_wrapper {
+    max-width: 1920px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    
+    .container {
+        max-width: 1440px;
+        width: 100%;
+        margin: auto;
         display: flex;
-        align-items: center;
         justify-content: space-between;
-        .container{
-            max-width: 1440px;
-            width: 100%;
-            margin: auto;
         
-            .sign__connection{
-                gap: 20px;
-                display: flex;
-                a{
-                font-family: "Lato", serif;
-                font-weight: 700;
-                font-size: 24px;
-                line-height: 33px;
-                color: $grey-color;
-                gap: 20px;
+        // Left side content
+        .left_content {
+            width: 50%;
+            padding: 20px 40px;
+            
+            .sign__main__img {
+                margin-bottom: 30px;
+                
+                img {
+                    max-width: 200px;
                 }
             }
-            .signup__form{
-               display: flex;
-               justify-content: center;
-               flex-direction: column;
+            
+            
+            .sign__connection {
+                display: flex;
+                gap: 30px;
+                margin-bottom: 30px;
+                
+                a {
+                    font-family: "Lato", serif;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 33px;
+                    color: $grey-color;
+                    text-decoration: none;
+                    padding-bottom: 5px;
+                    transition: all 0.3s ease;
+                    
+                    &.active {
+                        color: $black-color;
+                        border-bottom: 2px solid $black-color;
+                    }
+                    
+                    &:hover {
+                        color: darken($grey-color, 15%);
+                    }
+                }
+            }
+            
+           
+            .form-container {
+                display: none;
+                opacity: 0;
+                visibility: hidden;
+                transition: opacity 0.3s ease, visibility 0.3s ease;
+                
+                &.active {
+                    display: block;
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+            
+         
+            .signup__form {
+                display: flex;
+                flex-direction: column;
                 gap: 20px;
-                input{
+                
+                input {
                     height: 48px;
                     max-width: 450px;
                     border-radius: 4px;
                     padding-left: 14px;
                     padding-right: 14px;
                     border: 1px solid $input-border-color;
-                    color: $white-color;
+                    color: $grey-black-color;
+                    font-size: 16px;
+                    
+                    &:focus {
+                        outline: none;
+                        border-color: darken($input-border-color, 15%);
+                    }
+                    
+                    &::placeholder {
+                        color: lighten($grey-color, 20%);
+                    }
                 }
-
-                .signup-btn{
-                    padding: 20px 69px;
+                
+                .signup-btn {
+                    padding: 15px 0;
                     height: 48px;
                     max-width: 450px;
                     border-radius: 10px;
@@ -51,37 +105,52 @@
                     justify-content: center;
                     letter-spacing: 0%;
                     font-weight: 400;
+                    border: none;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+                    
+                    &:hover {
+                        background-color: lighten($black-color, 15%);
+                    }
                 }
-
             }
-            .line__contanier{
+            
+            // Line container for "or" section
+            .line__contanier {
                 display: flex;
-                gap: 30px;
-                margin: 20px 0px;
-
-                span{
+                align-items: center;
+                gap: 15px;
+                margin: 20px 0;
+                max-width: 450px;
+                
+                .line {
+                    flex: 1;
+                    height: 1px;
+                }
+                
+                span {
                     font-size: 14px;
                     line-height: 19px;
                     letter-spacing: 1.25%;
                     font-family: "Lato", serif;
                     font-weight: 400;
                     color: $grey-color;
-
+                    white-space: nowrap;
                 }
             }
-
             
-
-            .social-signup{
+            // Social login buttons
+            .social-signup {
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
                 gap: 16px;
+                max-width: 450px;
                 
-                
-                a{
-                    .google-btn{
-                        max-width: 450px;
+                a {
+                    text-decoration: none;
+                    
+                    .google-btn,
+                    .facebook-btn {
                         width: 100%;
                         height: 48px;
                         padding: 12px 24px;
@@ -89,35 +158,32 @@
                         border: 1px solid $input-border-color;
                         display: flex;
                         align-items: center;
-                        font-size:14px;
+                        font-size: 14px;
                         font-weight: 500;
                         line-height: 19px;
                         color: $grey-black-color;
                         justify-content: center;
-                        gap: 6px;
+                        gap: 10px;
                         background-color: $white-color;
-                    }
-                    .facebook-btn{
-                        max-width: 450px;
-                        width: 100%;
-                        height: 48px;
-                        padding: 12px 24px;
-                        border-radius: 8px;
-                        border: 1px solid $input-border-color;
-                        display: flex;
-                        align-items: center;
-                        font-size:14px;
-                        font-weight: 500;
-                        line-height: 19px;
-                        color: $grey-black-color;
-                        justify-content: center;
-                        gap: 6px;
-                        background-color: $white-color;
+                        cursor: pointer;
+                        transition: all 0.3s ease;
+                        
+                        &:hover {
+                            background-color: darken($white-color, 5%);
+                            border-color: darken($input-border-color, 10%);
+                        }
+                        
+                        img {
+                            width: 20px;
+                            height: 20px;
+                        }
                     }
                 }
             }
-            .footer{
-                font-size: 16px;
+            
+            // Footer copyright
+            .footer {
+                font-size: 14px;
                 letter-spacing: 0.5%;
                 line-height: 22px;
                 font-weight: 400;
@@ -125,23 +191,156 @@
                 color: $grey-color;
                 margin-top: 40px;
             }
-
-            .side__right{
-                width: 50%;
-                background: linear-gradient(to right, #e0e0e0, #c0c0c0);
-                border-radius: 10px;
+        }
+        
+        // Right side banner
+        .side__right {
+            width: 50%;
+            background: linear-gradient(135deg, #e0e0e0, #a0a0a0);
+            border-radius: 12px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            position: relative;
+            
+            .side__banner {
+                width: 100%;
+                height: 100%;
+                padding: 40px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                position: relative;
-                .side__banner{
-                    width: 100%;
-                    height: 100%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                
+                .banner_content {
+                    text-align: center;
                     
+                    p {
+                        font-size: 28px;
+                        line-height: 1.4;
+                        color: $white-color;
+                        font-weight: 500;
+                        margin-bottom: 40px;
+                        text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+                    }
+                }
+            }
+            
+            // Carousel styles
+            .carousel-container {
+                width: 100%;
+                position: relative;
+                
+                .carousel-slides {
+                    position: relative;
+                    width: 100%;
+                    height: 350px;
+                    overflow: hidden;
+                    
+                    .carousel-slide {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        opacity: 0;
+                        transition: opacity 0.5s ease-in-out;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        
+                        &.active {
+                            opacity: 1;
+                        }
+                        
+                        img {
+                            max-width: 300px;
+                            max-height: 100%;
+                            object-fit: contain;
+                        }
+                    }
+                }
+                
+                .carousel-dots {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 20px;
+                    
+                    .dot {
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        background-color: rgba(255, 255, 255, 0.5);
+                        margin: 0 5px;
+                        cursor: pointer;
+                        transition: background-color 0.3s ease;
+                        
+                        &.active {
+                            background-color: $white-color;
+                            transform: scale(1.2);
+                        }
+                        
+                        &:hover {
+                            background-color: rgba(255, 255, 255, 0.8);
+                        }
+                    }
                 }
             }
         }
     }
+}
+@media (max-width: 768px) {
+    .sign_wrapper .container {
+        flex-direction: column;
+            .left_content{
+                width: 100%;
+            }
+        
+        .side__right {
+            width: 100%;
+            padding: 20px;
+            
+        }
+        
+        .side__right {
+            order: -1;
+            min-height: 300px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .sign_wrapper {
+        .container {
+            .left_content {
+                width: 100%;
+                .sign__connection {
+                    gap: 15px;
+                    
+                    a {
+                        font-size: 18px;
+                    }
+                }
+                
+                .signup__form {
+                    input,
+                    .signup-btn {
+                        max-width: 100%;
+                    }
+                }
+                
+                .social-signup a .google-btn,
+                .social-signup a .facebook-btn {
+                    max-width: 100%;
+                }
+            }
+            
+            .side__right {
+                display: none;
+                .side__banner {
+                    .banner_content p {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
