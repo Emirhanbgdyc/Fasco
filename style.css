@@ -116,6 +116,31 @@
   gap: 6px;
   background-color: #FFFFFF;
 }
+.sign_wrapper .container .footer {
+  font-size: 16px;
+  letter-spacing: 0.5%;
+  line-height: 22px;
+  font-weight: 400;
+  font-family: "Lato", serif;
+  color: #8A8A8A;
+  margin-top: 40px;
+}
+.sign_wrapper .container .side__right {
+  width: 50%;
+  background: linear-gradient(to right, #e0e0e0, #c0c0c0);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.sign_wrapper .container .side__right .side__banner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 * {
   margin: 0;
