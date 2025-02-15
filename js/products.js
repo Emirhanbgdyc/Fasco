@@ -1,3 +1,7 @@
+
+//!ÜRÜN FİLTRELEME İÇİN KULLANILIR
+
+
 const buttons = document.querySelectorAll(".arrivals__button");
 const productsContainer = document.querySelector(".arrivals__products__grid");
 
