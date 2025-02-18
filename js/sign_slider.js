@@ -47,7 +47,6 @@ document.addEventListener('DOMContentLoaded', function() {
     //     currentSlide = (currentSlide + 1) % slides.length;
     //     showSlide(currentSlide);
     // }
-
     const autoRotate = () => {
         currentSlide = (currentSlide + 1) % slides.length;
         showSlide(currentSlide);
