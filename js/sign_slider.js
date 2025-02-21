@@ -43,6 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
+    
     // function autoRotate() {
     //     currentSlide = (currentSlide + 1) % slides.length;
     //     showSlide(currentSlide);
