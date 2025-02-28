@@ -1,0 +1,21 @@
+
+    .loading__container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        transition: opacity 0.5s ease-in-out;
+        margin: 0;
+        padding: 0;
+        
+        .spinner {
+
+        }
+        .loading__text{
+            font-size: 20px;
+            font-weight: bold;
+            font-family: "Roboto", sans-serif;
+            letter-spacing: 1%;
+
+         }
+    }

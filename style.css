@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 .sign_wrapper {
   max-width: 1920px;
   height: 100vh;
@@ -302,6 +303,22 @@
     font-size: 20px;
   }
 }
+.loading__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  transition: opacity 0.5s ease-in-out;
+  margin: 0;
+  padding: 0;
+}
+.loading__container .loading__text {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1%;
+}
+
 * {
   margin: 0;
   padding: 0;
