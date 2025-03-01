@@ -59,4 +59,3 @@ function removeActive(){
   })
 }
 
-window.location.href ="../pages/loading.html";
