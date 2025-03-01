@@ -58,3 +58,4 @@ function removeActive(){
       button.classList.remove("aktif");
   })
 }
+
