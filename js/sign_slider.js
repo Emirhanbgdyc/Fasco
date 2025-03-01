@@ -60,3 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
         intervalId = setInterval(autoRotate, 5000);
     });
 });
+
+function skipIntro() {
+    sessionStorage.setItem("visited", "true"); 
+}

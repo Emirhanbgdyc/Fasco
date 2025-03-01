@@ -59,3 +59,11 @@ function removeActive(){
   })
 }
 
+
+//? ---------Bu kisim Yonlendirme isinin oldugu kisimdir ----------------
+document.addEventListener("DOMContentLoaded", function () {
+    if (!sessionStorage.getItem("visited")) {
+        sessionStorage.setItem("visited", "true"); 
+        window.location.href = "pages/loading.html";
+    }
+});
