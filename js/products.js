@@ -1,5 +1,4 @@
 
-//!ÜRÜN FİLTRELEME İÇİN KULLANILIR
 
 
 const buttons = document.querySelectorAll(".arrivals__button");
