@@ -303,22 +303,50 @@
     font-size: 20px;
   }
 }
-.loading__container {
+.loading-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  transition: opacity 0.5s ease-in-out;
+  flex-direction: column;
   margin: 0;
-  padding: 0;
+  height: 100vh;
+  align-items: center;
+  gap: 20px;
+  background: linear-gradient(135deg, #484848, #8A8A8A);
+  font-family: Arial, sans-serif;
 }
-.loading__container .loading__text {
+.loading-container .loader {
+  width: 60px;
+  height: 60px;
+  border: 8px solid rgba(255, 255, 255, 0.2);
+  border-top: 8px solid #ffffff;
+  border-radius: 50%;
+  animation: spin 0.8s ease-in-out infinite;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+.loading-container .loading-text {
+  color: #ffffff;
   font-size: 20px;
-  font-weight: bold;
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 1%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  animation: pulse 1.5s infinite;
 }
 
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* Nabız animasyonu */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
 * {
   margin: 0;
   padding: 0;
