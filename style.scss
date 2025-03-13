@@ -704,6 +704,20 @@ body {
 }
 
 
+.gallery{
+
+  .gallery__container{
+
+    .gallery__content{
+    text-align: center;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+
+    }
+  }
+
+}
 
 
 

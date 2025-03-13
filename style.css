@@ -308,6 +308,7 @@
   flex-direction: column;
   margin: 0;
   height: 100vh;
+  justify-content: center;
   align-items: center;
   gap: 20px;
   background: linear-gradient(135deg, #484848, #8A8A8A);
@@ -972,6 +973,13 @@ body {
   font-size: 16px;
   line-height: 16px;
   border-radius: 10px;
+}
+
+.gallery .gallery__container .gallery__content {
+  text-align: center;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
 }
 
 @media (max-width: 1750px) {
