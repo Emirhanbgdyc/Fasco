@@ -1,0 +1,47 @@
+
+.testimonials__wrapper{
+
+    max-width: 1920px;
+    width: 100%;
+    height: 100vh;
+    background-color: $white-dark-color;
+    padding: 58px 240px;
+
+    .testimonials__container{
+        max-width: 1440px;
+        width: 100%;
+
+        .testimonials__content{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+            margin: 0 auto;
+
+            .testimonials__title{
+                font-family: 'Volkhov',sans-serif;
+                font-weight: 400;
+                font-size: clamp(30px,4vw,46px);
+                line-height: 100%;
+                letter-spacing: 0%;
+                color: $grey-black-color;
+                max-width: 716px;
+            }
+            .testimonials__text{
+                font-family: 'Poppins',sans-serif;
+                font-weight: 400;
+                font-size: clamp(12px,1vw,16px);
+                line-height: 26px;
+                letter-spacing: 0%;
+                color: $grey-color;
+                
+            }
+
+
+        }
+
+    }
+
+
+}
