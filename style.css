@@ -397,6 +397,123 @@
     display: none;
   }
 }
+.header-wrapper {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  padding: 20px 40px;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+  z-index: 100;
+}
+.header-wrapper .container {
+  width: 88%;
+  max-width: 1440px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-wrapper .container .header-img img {
+  max-width: 171px;
+  height: auto;
+}
+.header-wrapper .container .bars__menu #bars__button {
+  display: none;
+}
+.header-wrapper .container .header-navbar {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-wrapper .container .header-navbar .close-navbar {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1010;
+}
+.header-wrapper .container .header-navbar ul {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.header-wrapper .container .header-navbar ul li .nav-item {
+  color: #333;
+  font-weight: 400;
+  font-size: 15px;
+  text-decoration: none;
+}
+.header-wrapper .container .header-navbar .header__icons {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-left: auto;
+}
+.header-wrapper .container .header-navbar .header__icons a {
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+  .header-wrapper .container .header-navbar {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 616px;
+    background-color: #FFFFFF;
+    padding: 20px;
+    transition: right 0.3s ease;
+    flex-direction: column;
+    box-shadow: -4px 4px 7px 0px rgba(0, 0, 0, 0.1490196078);
+    gap: 60px;
+    z-index: 1000;
+  }
+  .header-wrapper .container .header-navbar ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .header-wrapper .container .header-navbar ul li .nav-item {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .header-wrapper .container .header-navbar .header__icons a {
+    display: none;
+  }
+  .header-wrapper .container .header-navbar.active {
+    right: 0;
+  }
+  .header-wrapper .container .bars__menu {
+    width: 50%;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 1001;
+  }
+  .header-wrapper .container .bars__menu #bars__button {
+    display: block;
+    background-color: #000000;
+    color: #FFFFFF;
+    height: 44px;
+    width: 120px;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+  }
+}
 .loading-container {
   display: flex;
   flex-direction: column;
@@ -712,64 +829,6 @@ body {
 
 ::-webkit-scrollbar-track {
   background: #474747;
-}
-
-.header-wrapper {
-  width: 100%;
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  position: fixed;
-  padding: 20px 40px;
-  top: 0;
-  left: 0;
-  transition: all 0.3s ease-in-out;
-  z-index: 100;
-}
-.header-wrapper .container {
-  width: 88%;
-  max-width: 1440px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.header-wrapper .container .header-img img {
-  max-width: 171px;
-  height: auto;
-}
-.header-wrapper .container .header-navbar {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.header-wrapper .container .header-navbar ul {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  gap: 32px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.header-wrapper .container .header-navbar ul li .nav-item {
-  color: #333;
-  font-weight: 400;
-  font-size: 15px;
-  text-decoration: none;
-}
-.header-wrapper .container .header-navbar ul li .nav-item.active {
-  color: #000;
-  font-weight: 500;
-}
-.header-wrapper .container .header-navbar .header__icons {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  margin-left: auto;
-}
-.header-wrapper .container .header-navbar .header__icons a {
-  color: #000000;
 }
 
 .header-wrapper.move {
