@@ -79,10 +79,11 @@ const heroRender =()=>{
 
 const initializeCareousel =()=>{
     $('.owl-carousel').owlCarousel({
-        loop:true,
+        loop:false,
+        dots: false,
         margin:10,
-        nav:true,
-        autoplayTimeout: 3000,
+        nav:false,
+        autoplayTimeout: 2000,
         autoplayHoverPause: true,
         responsive:{
             0:{items:1},

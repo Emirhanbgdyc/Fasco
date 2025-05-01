@@ -65,6 +65,12 @@ cd [FASCO]
   shadow/
   --_colors.scss
   --_index.scss
+  --_fontfamily.scss
+  --_gallary.scss
+  --_index.scss
+  --_loading.scss
+  --_sign.scss
+  --_testimonials.scss
   
 
 
