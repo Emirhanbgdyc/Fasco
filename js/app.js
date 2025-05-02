@@ -7,17 +7,17 @@
 
 //?Scroll Degismesi Baslangic
 
-let add = 150;
+// let add = 150;
 
-window.addEventListener('scroll',()=>{
-    // console.log(window.scrollY , scrollHeaderWrapper.offsetHeight);
+// window.addEventListener('scroll',()=>{
+//     // console.log(window.scrollY , scrollHeaderWrapper.offsetHeight);
 
-    if(window.scrollY > scrollHeaderWrapper.offsetHeight + add){
-        scrollHeaderWrapper.classList.add('move');
-    }else{
-        scrollHeaderWrapper.classList.remove('move');
-    }
-})
+//     if(window.scrollY > scrollHeaderWrapper.offsetHeight + add){
+//         scrollHeaderWrapper.classList.add('move');
+//     }else{
+//         scrollHeaderWrapper.classList.remove('move');
+//     }
+// })
 
 //?Scroll Degismesi Bitis
 

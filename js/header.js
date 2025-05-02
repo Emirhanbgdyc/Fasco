@@ -2,7 +2,7 @@ const NavbarController = (() => {
     const selectors = {
         navbar: '.header-navbar',
         toggleButton: '#bars__button',
-        closeButton: '.close-navbar' 
+        closeButton: '.close-navbar'
     };
 
     const navbar = document.querySelector(selectors.navbar);
@@ -11,18 +11,10 @@ const NavbarController = (() => {
     function toggleNavbar(event) {
         event.stopPropagation();
         navbar.classList.toggle("active");
-
-  
-        if (navbar.classList.contains("active")) {
-            toggleButton.style.display = "none";
-        } else {
-            toggleButton.style.display = "block";
-        }
     }
 
     function closeNavbar() {
         navbar.classList.remove('active');
-        toggleButton.style.display = "block"; 
     }
 
     function handleOutsideClick(event) {
@@ -51,7 +43,6 @@ const NavbarController = (() => {
             }
         });
 
-    
         const closeButton = document.querySelector(selectors.closeButton);
         if (closeButton) {
             closeButton.addEventListener("click", closeNavbar);
