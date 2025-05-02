@@ -522,7 +522,7 @@
 }
 .deals__wrapper {
   background: #f5f5f5;
-  max-width: 1440px;
+  max-width: 1920px;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -538,6 +538,9 @@
 }
 .deals__wrapper .container .deals__content {
   max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 .deals__wrapper .container .deals__h2 {
   font-family: "Josefin Sans", serif;
@@ -552,12 +555,11 @@
   font-size: 16px;
   line-height: 26px;
   color: #8A8A8A;
-  margin-top: 20px;
 }
 .deals__wrapper .container .deals__btn {
   background-color: #000000;
   width: 207px;
-  margin-block: 30px;
+  margin-bottom: 20px;
   height: 55px;
   border-radius: 10px;
   box-shadow: 0px 3px 12px 1px rgba(0, 0, 0, 0.75);
@@ -676,6 +678,79 @@
   color: #484848;
 }
 
+@media screen and (max-width: 1023px) {
+  .deals__wrapper {
+    display: block;
+  }
+  .deals__wrapper .container {
+    margin-left: 20px;
+  }
+  .deals__wrapper .container .deals__content {
+    width: 100%;
+    max-width: 1920px;
+  }
+  .deals__wrapper .container .deals__h2 {
+    font-size: 50px;
+  }
+  .deals__wrapper .container .deals__p {
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    max-width: 600px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .deals__wrapper {
+    display: block;
+  }
+  .deals__wrapper .container {
+    margin-left: 20px;
+  }
+  .deals__wrapper .container .deals__h2 {
+    font-size: 40px;
+  }
+  .deals__wrapper .container .deals__p {
+    font-size: 18px;
+  }
+  .deals__wrapper .products-area .product-one .product-one-discount {
+    width: 140px;
+    height: 100px;
+  }
+  .deals__wrapper .products-area .product-one .product-one-discount h2 {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  .deals__wrapper .products-area .product-one .product-one-discount h3 {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .deals__wrapper {
+    display: block;
+  }
+  .deals__wrapper .container {
+    margin-left: 20px;
+  }
+  .deals__wrapper .container .deals__btn {
+    width: 100%;
+  }
+  .deals__wrapper .container .deals__h2 {
+    font-size: 40px;
+  }
+  .deals__wrapper .container .deals__p {
+    font-size: 18px;
+  }
+  .deals__wrapper .products-area .product-one .product-one-discount {
+    width: 100px;
+    height: 100px;
+  }
+  .deals__wrapper .products-area .product-one .product-one-discount h2 {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  .deals__wrapper .products-area .product-one .product-one-discount h3 {
+    font-size: 16px;
+  }
+}
 .loading-container {
   display: flex;
   flex-direction: column;

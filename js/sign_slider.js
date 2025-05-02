@@ -64,3 +64,4 @@ document.addEventListener('DOMContentLoaded', function() {
 function skipIntro() {
     sessionStorage.setItem("visited", "true"); 
 }
+
