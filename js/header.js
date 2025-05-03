@@ -8,6 +8,13 @@ const NavbarController = (() => {
     const navbar = document.querySelector(selectors.navbar);
     const toggleButton = document.querySelector(selectors.toggleButton);
 
+    if(!navbar || !toggleButton){
+        console.log("Böyle bişey ortada yok")
+        return{
+            init:()=>{}
+        };
+    };
+
     function toggleNavbar(event) {
         event.stopPropagation();
         navbar.classList.toggle("active");
@@ -18,8 +25,8 @@ const NavbarController = (() => {
     }
 
     function handleOutsideClick(event) {
-        const clickedInsideNavbar = event.composedPath().includes(navbar);
-        const clickedToggleButton = event.composedPath().includes(toggleButton);
+        const clickedInsideNavbar = navbar.contains(event.target);
+        const clickedToggleButton =toggleButton.contains(event.target);
 
         if (!clickedInsideNavbar && !clickedToggleButton && navbar.classList.contains('active')) {
             closeNavbar();
