@@ -1386,6 +1386,7 @@ body {
   max-width: 1920px;
   width: 100%;
   margin: 0 auto;
+  padding: 72px 120px;
 }
 .knowledge__wrapper .container {
   display: flex;
@@ -1396,7 +1397,6 @@ body {
 .knowledge__wrapper .container .knowledge__box {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 10px;
 }
 .knowledge__wrapper .container .knowledge__box .knowledge__Text {
@@ -1404,7 +1404,40 @@ body {
   flex-direction: column;
   gap: 10px;
 }
+.knowledge__wrapper .container .knowledge__box .knowledge__Text .knowledge__title {
+  color: #484848;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.knowledge__wrapper .container .knowledge__box .knowledge__Text .knowledge__text {
+  color: #484848;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0%;
+}
 
+@media (max-width: 1023px) {
+  .knowledge__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+  }
+  .knowledge__wrapper .container {
+    display: grid;
+    justify-content: left;
+    gap: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .knowledge__wrapper {
+    padding: 30px;
+  }
+}
 @media (max-width: 1750px) {
   .featured__slider .featured__container .featured__images .f_img6 {
     display: none;

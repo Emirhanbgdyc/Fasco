@@ -377,6 +377,7 @@ body {
   max-width: 1920px;
   width: 100%;
   margin: 0 auto;
+  padding: 72px 120px;
 
   .container{
 
@@ -388,13 +389,33 @@ body {
     .knowledge__box{
       display: flex;
       align-items: center;
-      justify-content: center;
+    
       gap: 10px;
 
       .knowledge__Text{
         display: flex;
         flex-direction: column;
         gap: 10px;
+
+        .knowledge__title{
+          color: $grey-black-color;
+          font-family: 'Poppins',sans-serif;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 100%;
+          letter-spacing: 0%;
+        }
+
+        .knowledge__text{
+          color: $grey-black-color;
+          font-family: 'Poppins',sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 26px;
+          letter-spacing: 0%;
+        }
+
+
       }
 
 
@@ -406,6 +427,35 @@ body {
 
 
 
+
+@media(max-width:1023px){
+
+  .knowledge__wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+
+    .container{
+      display: grid;
+      justify-content: left;
+      gap: 30px;
+    }
+
+  }
+  
+}
+
+
+@media(max-width:768px){
+
+  .knowledge__wrapper{
+    padding: 30px;
+
+    
+
+  }
+  
+}
 
 
 
