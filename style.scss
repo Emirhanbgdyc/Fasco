@@ -425,6 +425,16 @@ body {
 
 }
 
+@media(max-width:1366px){
+  .knowledge__wrapper{
+    
+    .container{
+      grid-template-columns: repeat(2, 1fr);
+      display: grid;
+    }
+  }
+}
+
 
 
 
@@ -433,12 +443,16 @@ body {
   .knowledge__wrapper{
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    padding: 50px;
 
     .container{
-      display: grid;
+      display: block;
       justify-content: left;
-      gap: 30px;
+
+      .knowledge__box{
+        margin: 40px 0;
+      }
+      
     }
 
   }
@@ -450,9 +464,6 @@ body {
 
   .knowledge__wrapper{
     padding: 30px;
-
-    
-
   }
   
 }

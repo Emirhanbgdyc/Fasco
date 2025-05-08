@@ -83,6 +83,14 @@ const initializeCareousel =()=>{
     });
 }; 
 
+
+
+
+
+
+
+
+
 //? Tum Fonksiyonlarin toplandigi kisimm...
 
 const initialize = ()=>{
@@ -96,3 +104,6 @@ initialize();
 
 
 })();
+
+
+
