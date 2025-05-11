@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     const timerInterval = setInterval(updateCountdown, 1000);
 
-    window.setCustomTime(7, 5, 10, 30);
+    // window.setCustomTime(7, 5, 10, 30);
 
    
   });
