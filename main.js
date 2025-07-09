@@ -5,3 +5,4 @@ import './js/loading.js';
 import './js/products.js';
 import './js/script.js';
 import './js/sign_slider.js';
+import './js/testimonials.js';
